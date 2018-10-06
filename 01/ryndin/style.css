@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+body {
+    margin: 0;
+}
+.vr__wrapper__about-us {
+    width: 100%;
+    background-color: #edecec;
+}
+
+.vr__container__about-us {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 158px;
+    padding-bottom: 75px;
+}
+
+.vr__row__about-us {
+    margin: 0 -15px;
+    padding-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.vr__col__about-us {
+    padding: 0 15px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.vr__col__about-us-4 {
+    width: 33.3333333%;
+    margin-top: 210px;
+}
+
+.vr__col__about-us-4 h1 {
+    padding: 0;
+    margin: 0;
+    
+}
+
+.vr__col__about-us-4 p {
+    width: 350px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.vr__col__about-us-4 hr {
+    width: 16px;
+    border: 1px solid #4fa09f;
+    margin-left: 0;
+    margin-bottom: 49px;
+    margin-top: 52px;
+}
+
+.vr__button {
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    padding: 23px 35px;
+    border: 2px solid #158483;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    /* letter-spacing: 2px; */
+}
+
+.vr__col__about-us-8 {
+    width: 66.6666666%
+}
+
+.vr__clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.vr__slideshow {
+    float: right;
+}
+
+.vr__slides {
+    display: none;
+}
+
+.vr__slides__nav {
+    position: relative;
+}
+
+.vr__slides__nav__btn {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 6px 13px;
+    width: 51px;
+    height: 51px;
+    font-size: 34px;
+    background-color: #158483;
+    color: white;
+}
+
+.vr__slides__nav__btn:hover {
+    cursor: pointer;
+    color: #4fa09f;
+}
+
+.vr__slides__nav__btn-left {
+    top: -305px;
+    left: -24px;   
+}
+
+.vr__slides__nav__btn-right {
+    top: -305px;
+    right: -24px;
+}
+
+.vr__slides__selector {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.vr__current {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: #aaaaaa;
+    margin-right: 17px;
+}
+
+.vr__current:hover {
+    background-color: #158483;
+    cursor: pointer;
+}
+
+.vr__current-fill {
+    background-color: #158483;
+}
