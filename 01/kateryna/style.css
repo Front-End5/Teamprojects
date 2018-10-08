@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+.dk-body{
+    margin: 0;
+}
+.dk-wrapper{
+    width: 100%;
+    height: 732px;
+    background-color: #edecec;
+}
+.dk-container {
+    width: 1600px;
+    margin: 0 auto;
+    padding-top: 201px;
+    padding-bottom: 183px;
+    padding-right: 102px;
+    padding-left: 109px;
+}
+.dk-row{
+    margin: 0 -15px;
+    padding-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+.dk-col {
+    padding: 0 15px;
+    float: left;
+    box-sizing: border-box;
+}
+.dk-col h4{
+    text-align: center;
+    color: #549494;
+    font-weight: 700;
+    line-height: 1.0; 
+}
+.dk-col h5{
+    text-align: center;
+    color: black;
+    font-weight: 300;
+}
+.dk-col-1{
+    width: 16.6666666%
+
+}
+.dk-col-2{
+    width: 16.6666666%
+}
+
+.dk-col-3{
+    width: 16.6666666%
+}
+.dk-col-4{
+    width: 16.6666666%
+}
+.dk-clear{
+    clear: both;
+}
+.dk-col-2 .dk-col-3 .dk-col-4{
+    float: right;
+}
+.dk-col-1 h1{
+    text-transform: uppercase;
+    padding: 0;
+    margin: 20px 20px 20px 0;
+}
+.dk-col-1 hr{
+    width: 17px;
+    border: 1px solid #4fa09f;
+    margin-left: 0;
+    margin-bottom: 50px;
+    margin-top: 52px;
+}
+.dk-button{
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 14px;
+    padding: 24px 45px;
+    border: 2px solid #158483;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+/* width: 64px;
+height: 10px;
+color: black;
+font-family: Raleway;
+
+
+line-height: 24px;
+ */
+
+
+/* .dk-width: 44px;
+.dk-height: 12px;
+.dk-color: white;
+.dk-font-family: Raleway;
+.dk-font-size: 16px;
+.dk-font-weight: 700;
+.dk-line-height: 30px;
+.dk-text-transform: uppercase; */
