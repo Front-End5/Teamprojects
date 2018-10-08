@@ -29,20 +29,26 @@ body {
 
 .vr__col__about-us-4 {
     width: 33.3333333%;
-    margin-top: 210px;
+    margin-top: 199px;
+    padding-left: 55px;
 }
 
 .vr__col__about-us-4 h1 {
     padding: 0;
     margin: 0;
-    
+    font-size: 44px;
+    letter-spacing: 0.4px;
+    word-spacing: -0.4px;
 }
 
 .vr__col__about-us-4 p {
     width: 350px;
-    font-size: 17px;
-    line-height: 1.5;
+    font-size: 17.2px;
+    line-height: 22.5px;
     font-weight: 300;
+    margin-top: 39px;
+    margin-left: 2px;
+    word-spacing: -0.8px;
 }
 
 .vr__col__about-us-4 hr {
@@ -50,20 +56,20 @@ body {
     border: 1px solid #4fa09f;
     margin-left: 0;
     margin-bottom: 49px;
-    margin-top: 52px;
+    margin-top: 45px;
 }
 
 .vr__button {
-    box-sizing: border-box;
     text-transform: uppercase;
     font-size: 14px;
     display: inline-block;
-    padding: 23px 35px;
+    padding: 20px 32.5px;
     border: 2px solid #158483;
     text-decoration: none;
     color: black;
     font-weight: lighter;
-    /* letter-spacing: 2px; */
+    letter-spacing: 2px;
+    margin-left: 2px;
 }
 
 .vr__col__about-us-8 {
@@ -91,10 +97,10 @@ body {
 .vr__slides__nav__btn {
     box-sizing: border-box;
     position: absolute;
-    padding: 6px 13px;
+    padding: 9px 16px;
     width: 51px;
     height: 51px;
-    font-size: 34px;
+    font-size: 30px;
     background-color: #158483;
     color: white;
 }
@@ -111,11 +117,12 @@ body {
 
 .vr__slides__nav__btn-right {
     top: -305px;
-    right: -24px;
+    right: -22px;
 }
 
 .vr__slides__selector {
     text-align: center;
+    margin-left: -20px;
     margin-top: 22px;
 }
 
@@ -124,7 +131,7 @@ body {
     height: 15px;
     width: 15px;
     background-color: #aaaaaa;
-    margin-right: 17px;
+    margin-right: 13px;
 }
 
 .vr__current:hover {
