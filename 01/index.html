@@ -91,12 +91,77 @@
     <!-- Саша -->
     <!-- Вероника -->
     <!-- Влад -->
+    <link rel="stylesheet" href="./ryndin/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <div class="vr__wrapper__about-us">
+        <div class="vr__container__about-us">
+            <div class="vr__row__about-us vr__clearfix">
+                <div class="vr__col__about-us vr__col__about-us-4">
+                    <h1>ABOUT US</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet erat malesuada interdum. Aenean sodales dui quis leo fermentum scelerisque. Fusce condimentum dolor justo, ac tristique diam</p>
+                    <hr>
+                    <a href="#about_me" class="vr__button">About me</a>
+                </div>
+                <div class="vr__col__about-us vr__col__about-us-8">
+                    <div class="vr__slideshow">
+                        <img src="./ryndin/img/1.png" alt="" class="vr__slides">
+                        <img src="./ryndin/img/2.jpg" alt="" class="vr__slides">
+                        <img src="./ryndin/img/3.jpg" alt="" class="vr__slides">
+                        <div class="vr__slides__nav">
+                            <div class="vr__slides__nav__btn vr__slides__nav__btn-left" onclick="plusDivs(-1)"><i class="fas fa-chevron-left"></i></div>
+                            <div class="vr__slides__nav__btn vr__slides__nav__btn-right" onclick="plusDivs(1)"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                        <div class="vr__slides__selector">
+                                <span class="vr__current" onclick="currentDiv(1)"></span>
+                                <span class="vr__current" onclick="currentDiv(2)"></span>
+                                <span class="vr__current" onclick="currentDiv(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("vr__slides");
+          var dots = document.getElementsByClassName("vr__current");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace("vr__current-fill", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " vr__current-fill";
+        }
+        </script>
     <!-- Костя/Артур -->
     <!-- Юра -->
     <!-- Алевтина -->
     <!-- Наталья -->
     <!-- Варвара -->
-    <!-- Ирина -->
+    <!-- Ирина
+    -->
+    <link rel="stylesheet" href="./kovalchuk/css/style.css">
+    <div class="ik_blog">
+        <h1>
+            DIV_Irochka
+        </h1>
+    </div>
     <!-- Саша -->
     <!-- Катя -->
     <!-- Катя Е -->
