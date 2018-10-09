@@ -1,6 +1,10 @@
-.vvn_body {
+.vvn_bg {
     background: url(../img/bg.jpg) no-repeat;
-    font-family: 'Raleway', sans-serif;
+    width: 100%;
+}
+.vvn_container {
+    width: 1170px;
+    margin: 0 auto;
 }
 .vvn_article {
     display: flex;
@@ -26,10 +30,6 @@
 .clear {
     clear: both;
     height: 1px;
-}
-.container {
-    width: 1170px;
-    margin: 0 auto;
 }
 .vvn_h1 {
     text-transform: uppercase;
