@@ -1,0 +1,102 @@
+.vvn_body {
+    background: url(../img/bg.jpg) no-repeat;
+    font-family: 'Raleway', sans-serif;
+}
+.vvn_article {
+    display: flex;
+}
+.col {
+    padding: 0 15px;
+    float: left;
+    box-sizing: border-box;
+}
+.col-4 {
+    width: 33.33333%;
+}
+.col-8 {
+    width: 66.66666%;
+}
+.col-12 {
+    width: 100%;
+}
+.row {
+    margin: 0 -15px;
+    padding-bottom: 15px;
+}
+.clear {
+    clear: both;
+    height: 1px;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.vvn_h1 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-top: 140px;
+}
+.vvn_paragraf {
+    width: 344px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.vvn_line {
+    height: 1px;
+    width: 16px;
+    background-color: #158483;
+    margin-top: 45px;
+}
+.vvn_button {
+    margin-top: 50px;
+    width: 157px;
+    height: 60px;
+    border: 2px solid #158483;
+    background-color: transparent;
+    margin-bottom: 150px;
+    cursor: pointer;
+}
+.vvn_button:hover, .vvn_button:focus {
+    color: white;
+    background-color: #158483;
+}
+.vvn_button:active {
+    background-color: #0e7977;
+}
+.vvn_category {
+    list-style: none;
+    margin-top: 230px;
+    display: flex;
+}
+.vvn_category li {
+    display: inline-block;
+    padding: 30px;
+}
+.vvn_box {
+    width: 134px;
+    height: 134px;
+    border: 5px solid #158483;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.vvn_box:hover, .vvn_box:focus {
+    color: white;
+    background-color: #158483;
+}
+.vvn_box:active {
+    background-color: #0e7977;
+}
+.vvn_button:category {
+    background-color: #0e7977;
+}
+.vvn_txt_button {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 32px;
+}
