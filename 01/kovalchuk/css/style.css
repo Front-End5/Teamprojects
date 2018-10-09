@@ -1,6 +1,6 @@
 .ik_blog{
-    border: blue;
     height: 896px;
-    background-color: lightgoldenrodyellow;
+    background-color: #EDECEC;
     text-align: center;
+    background-image: url('./kovalchuk/img/Blog Post.png');
 }
