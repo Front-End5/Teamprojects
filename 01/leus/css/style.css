@@ -1,3 +1,185 @@
-.lv {
-    
+.lv-block {
+    background-image: url(../images/Layer-13.png);
+}
+
+.clear {
+    clear: both;
+    height: 1px;
+}
+
+.lv-services {
+    width: 58.33%;
+    display: inline-block;
+    float: left;
+}
+
+.lv-col5 {
+    width: 41.66%;
+}
+
+
+.lv-block {
+    width: 1600px;
+    height: 744px;
+}
+
+.lv-col5 h2 {
+    width: 319px;
+    height: 33px;
+    color: white;
+    font-family: Raleway;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-top: 200px;
+    padding-left: 60px;
+}
+
+.lv-col5 p {
+    width: 344px;
+    height: 103px;
+    color: white;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+.lv-button {
+    width: 157px;
+    height: 60px;
+    border: 2px solid black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: none;
+    margin-left: 60px;
+
+}
+
+.lv-line {
+    width: 8px;
+    height: 1px;
+    background-color: rgb(51, 46, 46);
+    padding-left: 25px;
+    text-align: left;
+    margin-left: 60px;
+    border: none;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.lv-block h3 {
+    width: 113px;
+    height: 9px;
+    color: black;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.lv-marketing {
+    display: inline-block;
+    width: 161px;
+    height: 160px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(231, 218, 218);
+    margin-right: 50px;
+    margin-top: 120px;
+}
+
+.lv-marketing :hover {
+    color: aqua;
+}
+
+.lv-design {
+    display: inline-block;
+    width: 161px;
+    height: 160px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(231, 218, 218);
+    margin-right: 50px;
+    margin-top: 120px;
+}
+
+.lv-design :hover {
+    color: aqua;
+}
+
+.lv-data {
+    display: inline-block;
+    width: 161px;
+    height: 160px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(231, 218, 218);
+    margin-right: 50px;
+    margin-top: 120px;
+}
+
+.lv-data :hover {
+    color: aqua;
+}
+
+.lv-product {
+    display: block;
+    width: 161px;
+    height: 160px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(231, 218, 218);
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+.lv-product :hover {
+    color: aqua;
+}
+
+.lv-working {
+    display: inline-block;
+    width: 161px;
+    height: 160px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(231, 218, 218);
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+.lv-working :hover {
+    color: aqua;
+}
+
+.lv-seo {
+    display: inline-block;
+    width: 161px;
+    height: 160px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(231, 218, 218);
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+.lv-seo :hover {
+    color: aqua;
+}
+
+.lv-services img {
+    padding-top: 43px;
+}
+
+.lv-hover :hover {
+    background-color: aqua;
 }
