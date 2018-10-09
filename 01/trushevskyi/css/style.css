@@ -1,0 +1,96 @@
+.header{
+    padding-top: 50px;
+    height: 800px;
+}
+.carousel{
+    width: 100%;
+}
+.ktlogo{
+   text-align: left;
+   color: #4b5456;
+   font-size: 34px;
+   font-weight: 800;
+   line-height: 30px;
+   text-transform: uppercase;
+   font-family: "Raleway";
+}
+.carusel_content{
+    display: flex;
+}
+.carusel_main_content{
+    z-index: 1;
+    color: black;
+    margin-top: 200px;
+    height: 400px;
+}
+.carusel_main_content span{
+    font-weight: 300;
+    font-family: "Raleway";
+    font-size: 48px;
+    line-height: 57px;
+}
+.carusel_main_content h1{
+    font-weight: 500;
+    font-family: "Raleway";
+    font-size: 48px;
+    line-height: 57px;
+}
+.carusel_main_content p{
+    margin-top: 40px;
+    color: black;
+    font-family: "Raleway";
+    max-width: 600px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.carusel_main_content button{
+    cursor: none;
+    width: 20px;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 0;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.carusel_main_content > .first-line{
+    border: 0;
+    border-bottom: 1px solid #158483;
+    padding: 0;
+}
+.carusel_main_content a{
+    width: 157px;
+    height: 60px;
+    border: 1px solid black;
+    color: black;
+    font-family: "Raleway";
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.carusel_main_content a:hover{
+    text-decoration: none;
+}
+.carusel_main_content .first{
+    border: 2px solid #158483;
+}
+.carusel_image_content{
+    z-index: 0;
+    position: absolute;
+}
+.carusel_image_content img{
+    max-width: 1170px;
+}
+.carousel-indicators li{
+    background-color: black !important;
+}
+.carousel-indicators .active{
+    background-color: red !important;
+}
