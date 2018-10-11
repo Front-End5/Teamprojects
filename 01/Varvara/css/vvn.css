@@ -7,7 +7,7 @@
     background-position: top left;
 }
 .vvn_container {
-    width: 1400px;
+    width: 1370px;
     margin: 0 auto;
 }
 .vvn_article {
@@ -38,17 +38,17 @@
 .vvn_h1 {
     text-transform: uppercase;
     color: black;
-    font-size: 44px;
+    font-size: 46px;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.7px;
     line-height: 60px;
-    padding-top: 156px;
+    padding-top: 147px;
 }
 .vvn_paragraf {
-    margin-top: -19px;
+    margin-top: -22px;
     width: 358px;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 22px;
     color: rgb(48, 47, 47);
 }
@@ -81,18 +81,18 @@
 }
 .vvn_category {
     list-style: none;
-    margin-top: 278px;
-    margin-left: 22px;
+    margin-top: 276px;
+    margin-left: 20px;
     display: flex;
 }
 .vvn_category li {
     display: inline-block;
-    padding: 30px;
-    margin-left: 30px;
+    padding: 32px;
+    margin-left: 25px;
 }
 .vvn_box {
-    width: 135px;
-    height: 135px;
+    width: 125px;
+    height: 125px;
     border: 5px solid #158483;
     background-color: transparent;
     text-align: center;
@@ -112,11 +112,11 @@
 .vvn_txt_button {
     font-size: 41px;
     font-weight: 700;
-    padding-top: 15px;
+    padding-top: 20px;
     letter-spacing: 2px;
 }
 .vvn_comment {
     font-size: 15px;
-    margin-top: -9px;
+    margin-top: 1px;
     letter-spacing: 0.6px;
 }
