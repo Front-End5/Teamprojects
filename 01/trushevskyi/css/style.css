@@ -1,42 +1,50 @@
-.header{
-    padding-top: 50px;
-    height: 800px;
+html{
+    max-height: 800px;
 }
-.carousel{
-    width: 100%;
+.header{
+    width: 1500px;
+    height: 800px;
+    padding-left: 93px;
+    padding-top: 41px;
+}
+.swiper-container{
+    height: 100%;
 }
 .ktlogo{
-   text-align: left;
-   color: #4b5456;
-   font-size: 34px;
-   font-weight: 800;
-   line-height: 30px;
-   text-transform: uppercase;
-   font-family: "Raleway";
-}
+    text-align: left;
+    color: #4b5456;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-family: "Raleway";
+ }
 .carusel_content{
+    height: 100%;
     display: flex;
 }
 .carusel_main_content{
     z-index: 1;
     color: black;
-    margin-top: 200px;
-    height: 400px;
+    margin-top: 293px;
+    height: 100%;
 }
 .carusel_main_content span{
     font-weight: 300;
     font-family: "Raleway";
     font-size: 48px;
     line-height: 57px;
+    letter-spacing: 1px;
 }
 .carusel_main_content h1{
+    margin: 0;
     font-weight: 500;
     font-family: "Raleway";
     font-size: 48px;
     line-height: 57px;
 }
 .carusel_main_content p{
-    margin-top: 40px;
+    margin-top: 34px;
     color: black;
     font-family: "Raleway";
     max-width: 600px;
@@ -51,8 +59,8 @@
     border-bottom: 1px solid black;
     padding: 0;
     display: block;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-top: 32px;
+    margin-bottom: 57px;
 }
 .carusel_main_content > .first-line{
     border: 0;
@@ -60,6 +68,7 @@
     padding: 0;
 }
 .carusel_main_content a{
+    text-decoration: none;
     width: 157px;
     height: 60px;
     border: 1px solid black;
@@ -72,10 +81,13 @@
     margin-top: 40px;
     font-size: 14px;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 29px;
     text-transform: uppercase;
+    transition: 500ms ease-in-out;
 }
-.carusel_main_content a:hover{
+.carusel_main_content .first:hover{
+    border: 2px solid red;
+    transition: 500ms ease-in-out;
     text-decoration: none;
 }
 .carusel_main_content .first{
@@ -84,13 +96,23 @@
 .carusel_image_content{
     z-index: 0;
     position: absolute;
+    margin-left: -100px;
+    margin-top: -78px;
 }
-.carusel_image_content img{
-    max-width: 1170px;
+.swiper-pagination-bullet{
+    width: 18px;
+    height: 18px;
+    background-color: #158483;
+    border: 2px solid #158483;
+    opacity: 1;
+    border-radius: 0;
 }
-.carousel-indicators li{
-    background-color: black !important;
+.swiper-pagination-bullet-active{
+    background-color: white;
+    border: 2px solid #158483;
+    border-radius: 2px;
 }
-.carousel-indicators .active{
-    background-color: red !important;
+.swiper-container-vertical > .swiper-pagination-bullets{
+    right: 51px;
+    top: 42%;
 }
