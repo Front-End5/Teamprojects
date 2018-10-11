@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+}
+.ss-footer {
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.ss-title {
+    text-align: center;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.ss-social {
+    display: inline-block;
+    list-style: none;
+    width: 34px;
+    height: 34px;
+    background-color: #4b5456;
+    border-radius: 50%;
+
+}
+.ss-footer ul{
+    padding: 0;
+    margin: 0 auto;
+    width: 270px;
+
+}
+.ss-social + .ss-social{
+    margin-left: 10px;
+}
+.ss-social a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #191f21;
+    
+}
+.ss-social a:hover {
+    color: white;
+}
+.ss-menu {
+    background-color:black;
+    padding-bottom: 23px;
+    padding-top: 23px;
+}
+.ss-container {
+    max-width: 1410px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ss-menu_item {
+    display: inline-block;
+    list-style: none;
+}
+.ss-menu_item a {
+color: white;
+font-family: 'Raleway';
+font-size: 16px;
+font-weight: 700;
+line-height: 1;
+text-transform: uppercase;
+text-decoration: none;
+}
+.ss-navigation {
+    padding: 0;
+    margin: 0;
+}
+.ss-menu_item a:hover {
+    color: #158483;
+}
+.ss-logo {
+    color: white;
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.ss-menu_item + .ss-menu_item {
+    margin-left: 10px;
+}
+.ss-information {
+    background-color: black;
+    padding-bottom: 130px;
+    padding-top: 130px;
+}
+.ss-header {
+    color: white;
+    font-family: 'Raleway';
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.ss-main_text {
+    font-family: 'Raleway';
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px; 
+}
+.ss-end_text {
+    font-family: 'Raleway';
+    text-align: center;
+}
+.ss-end_text a:hover {
+    color: #158483;
+}
+.ss-end_text a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 14px;
+    font-weight: 300;
+}
