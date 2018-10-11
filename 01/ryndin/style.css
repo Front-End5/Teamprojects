@@ -41,13 +41,12 @@ body {
     float: left;
     width: 33.333333%;
     overflow: hidden;
-    max-height: 600px;
 }
 
 .vr__vol-4__textarea {
     text-align: center;
     box-sizing: border-box;
-    padding: 79px 71px 90px 63px;
+    padding: 80px 71px 50px 63px;
 }
 
 .vr__col__about-us-4 {
@@ -133,12 +132,19 @@ body {
 .vr__slides__nav__btn {
     box-sizing: border-box;
     position: absolute;
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
     width: 51px;
     height: 51px;
     font-size: 30px;
     background-color: #158483;
     color: white;
+}
+
+.vr__slides__nav__btn i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .vr__slides__nav__btn:hover {
@@ -206,6 +212,10 @@ body {
     width: 48px;
     border: 0.5px solid black;
     margin-top: 9px;
+}
+
+.vr__col-4 img {
+    display: block;
 }
 
 .vr__container__work::after {
