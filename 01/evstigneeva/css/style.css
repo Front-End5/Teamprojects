@@ -2,6 +2,7 @@
     max-width: 1600px;
     margin: 0 auto;
     background-color:  #116a69;
+    /* background-image: url(../img/contact.jpg); */
 }
 
 .ev_col {
@@ -25,14 +26,14 @@
 .ev_row{
    
     height: 905px;
-    max-width: 1180px;
-    /* padding: 100px 165px; */
+    max-width: 1200px;
+   
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
 }
 
 .ev_contak{
-padding: 100px 50px ;
+padding: 80px 2px ;
 
 }
 .ev_title{
@@ -44,6 +45,7 @@ font-weight: 700;
 line-height: 24px;/* Приближение из-за подстановки шрифтов */
 text-align: left;
 text-transform: uppercase;
+padding-left: 11px;
 }
 
 .ev_cont{
@@ -51,7 +53,12 @@ text-transform: uppercase;
     font-size: 18px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
     line-height: 30px;/* Приближение из-за подстановки шрифтов */
-    text-align: left;}
+    text-align: left;
+    padding: 20px 30px 0 10px;}
+
+.padd_adr{
+    padding-top: 13px;
+}
     
     .ev_cont span{
     
@@ -60,6 +67,11 @@ font-size: 18px;/* Приближение из-за подстановки шр�
 font-weight: 700;
 line-height: 30px;/* Приближение из-за подстановки шрифтов */
 text-align: left;
+padding-right: 45px;
+
+}
+.ev_cont >.padd_tel{
+    padding-right: 38px;
 
 }
 
@@ -78,7 +90,10 @@ text-align: left;
 background-color:  rgba(237, 236, 236, 0.1);
 border: none;
 width: 540px;
-height: 56px;
+height: 54px;
+margin: 15px 10px 0px 2px;
+box-sizing: border-box;
+padding: 10px;
 }
 .ev_inp:focus{
     background:rgb(237, 236, 236);
@@ -87,14 +102,21 @@ height: 56px;
 
 
 .ev_inp_textarea{
-height: 279px;
+height: 274px;
 background-image: url(../img/icon.png);
 background-repeat: no-repeat;
-background-position: 520px 260px;
+background-position: 505px 245px;
 resize: none;
+box-sizing: border-box;
+padding: 10px;
 
 
 }
+.ev_form{
+    padding: 50px;
+}
+
+
 .ev_form label{
 
 color:  #ffffff;
@@ -118,7 +140,8 @@ font-weight: 700;
 line-height: 24px;/* Приближение из-за подстановки шрифтов */
 text-align: center;
 text-transform: uppercase;
-
+margin-top: 5px;
+cursor: pointer;
 
 }
 
