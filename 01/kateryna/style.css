@@ -59,6 +59,10 @@
     color: black;
     font-weight: lighter;
 }
+.dk-button:hover, .button:focus{
+    color: black;
+    background-color: #158483;
+}
 .dk-col-2{
     width: 16.6666666%;
     margin-top: 85px;
