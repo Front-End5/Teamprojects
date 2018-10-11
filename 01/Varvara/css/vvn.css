@@ -1,6 +1,13 @@
-.vvn_body {
+.vvn_bg {
+    display: block;
     background: url(../img/bg.jpg) no-repeat;
+    background: url(../img/Our\ Statistics.png) no-repeat;
+    width: 1600px;
     font-family: 'Raleway', sans-serif;
+}
+.vvn_container {
+    width: 1400px;
+    margin: 0 auto;
 }
 .vvn_article {
     display: flex;
@@ -23,36 +30,39 @@
     margin: 0 -15px;
     padding-bottom: 15px;
 }
-.clear {
+.vvn_clear {
     clear: both;
     height: 1px;
-}
-.container {
-    width: 1170px;
-    margin: 0 auto;
 }
 .vvn_h1 {
     text-transform: uppercase;
     color: black;
     font-size: 44px;
     font-weight: 700;
+    letter-spacing: 0.5px;
     line-height: 60px;
-    padding-top: 140px;
+    padding-top: 185px;
 }
 .vvn_paragraf {
-    width: 344px;
+    margin-top: 3px;
+    width: 358px;
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 22px;
+    color: rgb(48, 47, 47);
 }
 .vvn_line {
     height: 1px;
     width: 16px;
     background-color: #158483;
-    margin-top: 45px;
+    margin-top: 48px;
 }
 .vvn_button {
-    margin-top: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 49px;
+    margin-left: 1px;
+    letter-spacing: 1px;
     width: 157px;
     height: 60px;
     border: 2px solid #158483;
@@ -63,22 +73,25 @@
 .vvn_button:hover, .vvn_button:focus {
     color: white;
     background-color: #158483;
+    outline: none;
 }
 .vvn_button:active {
     background-color: #0e7977;
 }
 .vvn_category {
     list-style: none;
-    margin-top: 230px;
+    margin-top: 278px;
+    margin-left: 22px;
     display: flex;
 }
 .vvn_category li {
     display: inline-block;
     padding: 30px;
+    margin-left: 30px;
 }
 .vvn_box {
-    width: 134px;
-    height: 134px;
+    width: 135px;
+    height: 135px;
     border: 5px solid #158483;
     background-color: transparent;
     text-align: center;
@@ -96,7 +109,13 @@
     background-color: #0e7977;
 }
 .vvn_txt_button {
-    font-size: 40px;
+    font-size: 41px;
     font-weight: 700;
-    padding-top: 32px;
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+.vvn_comment {
+    font-size: 15px;
+    margin-top: -9px;
+    letter-spacing: 0.6px;
 }
