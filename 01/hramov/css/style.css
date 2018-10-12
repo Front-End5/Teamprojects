@@ -1,11 +1,15 @@
 .ae-title h1 {
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
     vertical-align: top;
     color: #158483;
     font-size: 18px;
     text-align: center;
     margin-top: 88px;
 }
-
+.ae-title{
+    font-family: 'Raleway', sans-serif;
+}
 .ae-right p {
     text-align: center;
     font-size: 16px;
@@ -17,14 +21,14 @@
 }
 
 .ae-foto {
-    width: 73%;
+    width: 1064px;
     height: 600px;
     float: left;
 }
 
 
 .ae-text {
-    width: 27%;
+    width: 500px;
     height: 600px;
     float: right;
 }
@@ -32,33 +36,56 @@
 .ae-text-p1 {
     margin: 50px 48px 0px 48px;
     text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    animation: fadeIn 1s;
 }
 
 .ae-text-p2 {
     margin: 40px 48px 20px 48px;
     text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    animation: fadeIn 1s;
 }
 
-.ae-hr {
+.ae-hr{
     width: 50px;
     text-align: center;
     color: black;
-    padding: 0px 0px 0px 164px;
+    padding: 0px 0px 0px 220px;
+    animation: fadeIn 1s;
+}
+.ae-hr2 {
+    width: 50px;
+    text-align: center;
+    color: black;
+    padding: 0px 0px 0px 192px;
+    animation: fadeIn 1s;
 }
 
 .ae-text-2 {
+    padding-left: 50px;
     width: 27%;
     height: 600px;
     float: left;
+    animation: fadeIn 1s;
 }
 
 .ae-foto-2 {
-    width: 73%;
+    width: 1064px;
     height: 600px;
     float: right;
+    background-blend-mode: multiply;
+    background-color:rgb(26, 132, 139);
 }
  
 .ae-container {
-    width: 1440px;
+    width: 1600px;
     height: 1200px;
+}
+.img{
+    opacity: 0.5;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
 }
