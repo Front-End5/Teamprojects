@@ -2,7 +2,8 @@ body {
     margin: 0;
 }
 .np_container {
-    width: 100%;
+    width: 1600px;
+    height: 776px;
     margin: 0 auto;
     background-color: #edecec;
     padding-top: 75px;
@@ -17,12 +18,12 @@ body {
 .np_col_6 {
     width: 50%;
 }
-.np_col_12{
+.np_col_12 {
     width: 100%;
 }
-.np_row{
+.np_row {
     margin: 0;
-    padding-bottom: 15px;
+    padding-top: 108px;
     font-family: 'Raleway';
 }
 .clear {
@@ -31,40 +32,43 @@ body {
 }
 .np_title {
     text-transform: uppercase;
-    margin-left: 50px;
+    margin-left: 83px;
     margin-right: 150px;
     font-size: 44px;
 	font-weight: 700;
-	line-height: 60px;
+    line-height: 60px;
+    word-spacing: 4.2px;
 }
 .np_text {
-    margin-right: 250px;
-    margin-left: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 344px;
+    margin: 35px 250px 30px 86px;
+    width: 360px;
     height: 103px;
     font-size: 17px;
 	font-weight: 300;
-	line-height: 22px;
+    line-height: 22px;
 }
 .np_col_6 hr {
     width: 16px;
 	height: 1px;
     background-color: #158483;
-    margin-left: 50px;
+    margin-left: 85px;
+    margin-top: 53px;
 }
 .np_button {
+    width: 85px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-family: 'Raleway';
+    font-size: 13.5px;
+    font-weight: 300;
+	line-height: 20px;
     display: inline-block;
-    padding: 18px 35px 18px 35px;
+    padding: 18px 33px 18px 33px;
     border: 2px solid #158483;
     text-decoration: none;
     color: black;
-    letter-spacing: 1.5px;
-    margin-left: 50px;
-    margin-top: 30px;
+    letter-spacing: 4px;
+    margin-left: 87px;
+    margin-top: 39.5px;
 }
 .np_button:hover, .np_button:active {
     background-color: #158483;
@@ -75,21 +79,29 @@ body {
     width: 134px;
 	height: 17px;
 	color: black;
-	font-family: Raleway;
+	font-family: 'Raleway';
 	font-size: 22px;
 	font-weight: 600;
-	line-height: 24px;
+	line-height: 30px;
     text-transform: uppercase;
     padding: 15px;
-    margin-left: -15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 33px;
+    position: relative; bottom: 30px;
 }
-.progress-bar {
+.nprogress-bar {
     width: 560px;
+    line-height: 30px;
     background-color: white;
+    margin-left: 50px;
+    position: relative; bottom: 30px;
 }
-.progress-bar > span {
+.nprogress-bar > span {
     background-color: #158483;
     text-align: right;
-    margin-right: -15px;
+    font-size: 18px;
+	font-weight: 500;
+	line-height: 30px;
+    display: block;
+    color: white;
 }
