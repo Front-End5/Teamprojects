@@ -6,6 +6,7 @@ html{
     height: 800px;
     padding-left: 93px;
     padding-top: 41px;
+    overflow: hidden;
 }
 .swiper-container{
     height: 100%;
