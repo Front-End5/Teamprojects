@@ -105,6 +105,28 @@
             el: '.swiper-pagination',
             clickable: true,
         },
+        on: {
+            slideChange: function(){
+                console.log(swiper.activeIndex);
+                switch (swiper.activeIndex) {
+                    case 0:
+                        $('.swiper-pagination-bullet').css({"width": "18px","height": "18px","background-color": "#158483","border": "2px solid #158483","opacity": "1","border-radius": "0"});
+                        $('.swiper-pagination-bullet-active').css({"background-color": "white","border": "2px solid #158483","border-radius": "2px"});
+                        console.log("removed");
+                    break;
+                     case 1:
+                        $('.swiper-pagination-bullet').css({"width": "18px","height": "18px","background-color":" black","border": "2px solid black", "opacity": "1","border-radius": "50%"});
+                        $('.swiper-pagination-bullet-active').css({"background-color": "white","border": "2px solid black","border-radius": "50%"});
+                    console.log("removed");
+                     break;
+                    case 2:
+                        $('.swiper-pagination-bullet').css({"width": "18px","height": "18px","background-color":" black","border": "2px solid black", "opacity": "1","border-radius": "50%"});
+                        $('.swiper-pagination-bullet-active').css({"background-color": "white","border": "2px solid black","border-radius": "50%"});
+                        console.log("removed");
+                    break;
+                }
+            }
+        }
     });
     </script>
     <!-- Кирилл скрипт энд -->
@@ -235,8 +257,8 @@
     <link rel="stylesheet" href="./ryndin/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-    <div class="vr__wrapper__about-us vr__clearfix">
-        <div class="vr__container__about-us">
+    <div class="vr__wrapper vr__wrapper__about-us vr__clearfix">
+        <div class="vr__container vr__container__about-us">
             <div class="vr__row__about-us vr__clearfix">
                 <div class="vr__col__about-us vr__col__about-us-4">
                     <h1>ABOUT US</h1>
@@ -299,30 +321,51 @@
 
     <div class="ae-container">
         <div class="ae-foto"> 
-            <img src="./hramov/img/Img 01.png" alt="">   
+            <img src="./hramov/img/Img 01.png" alt="" class="fade">   
         </div>
         <div class="ae-text">
-            <div class="ae-title"> <h1> MICHAEL JACKSON </h1> </div>
+            <div class="ae-title"><h1>MICHAEL JACKSON</h1></div>
             <div class="ae-text-p1"> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, itaque? Laborum mollitia odio reiciendis ipsum architecto dolor? Corrupti ducimus cumque a aliquid maxime beatae dolorum neque fugit sit rem ut aliquam, adipisci officiis, provident repudiandae ullam, debitis nihil incidunt numquam asperiores! Nisi deleniti quisquam  </p> </div>
             <div class="ae-text-p2"> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, itaque? Laborum mollitia odio reiciendis ipsum architecto dolor? Corrupti ducimus cumque a aliquid maxime beatae dolorum neque fugit sit rem ut aliquam, adipisci officiis, provident repudiandae ullam, debitis nihil incidunt numquam asperiores! Nisi deleniti quisquam  </p> </div>
             <div class="ae-hr"> <hr> </div>
         </div>
         <div class="ae-text-2">
-            <div class="ae-title"> <h1> JESSICA ALBA </h1> </div>
+            <div class="ae-title"><h1>JESSICA ALBA</h1></div>
             <div class="ae-text-p1"> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, itaque? Laborum mollitia odio reiciendis ipsum architecto dolor? Corrupti ducimus cumque a aliquid maxime beatae dolorum neque fugit sit rem ut aliquam, adipisci officiis, provident repudiandae ullam, debitis nihil incidunt numquam asperiores! Nisi deleniti quisquam  </p> </div>
             <div class="ae-text-p2"> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, itaque? Laborum mollitia odio reiciendis ipsum architecto dolor? Corrupti ducimus cumque a aliquid maxime beatae dolorum neque fugit sit rem ut aliquam, adipisci officiis, provident repudiandae ullam, debitis nihil incidunt numquam asperiores! Nisi deleniti quisquam  </p> </div>
-            <div class="ae-hr"> <hr> </div>
+            <div class="ae-hr2"> <hr> </div>
         </div>
-        <div class="ae-foto-2">
-            <img src="./hramov/img/Img 02.png" alt="">
+        <div class="image-container">
+                <img src="./hramov/img/Img_02.png" />
+                <div class="after">
+                    <h1 class="kh-h1">
+                        JESSICA ALBA
+                    </h1>
+                </div>
         </div>
     </div>
     <!-- Юра start -->
-    <!-- Юра's code -->
+        <div class="vr__wrapper vr__clearfix">
+            <div class="vr__container vr__container__work">
+                <div class="vr__col-4">
+                    <img src="./ryndin/img/work1.png" alt="">
+                </div>
+                <div class="vr__col-4 vr__vol-4__textarea">
+                    <h1>
+                        Vintage oliva
+                    </h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has <span class="vr__hidden">survived</span></p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has <span class="vr__hidden">survived</span></p>
+                    <hr>
+                </div>
+                <div class="vr__col-4">
+                    <img src="./ryndin/img/work2.png" alt="">
+                </div>
+            </div>
+        </div>
     <!-- Юра end -->
     <!-- Алевтина -->
-    <!-- Наталья -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Наталья start -->
     <link rel="stylesheet" href="./petrova/css/style.css">
     <div class="np_container">
         <div class="np_row">
@@ -337,25 +380,26 @@
             </div>
             <div class="np_col np_col_6">
                 <h2>Photoshop</h2>
-                <div class="progress-bar">
+                <div class="nprogress-bar">
                     <span style="width: 90%;">90%</span>
                 </div>
                 <h2>Illustrator</h2>
-                <div class="progress-bar">
+                <div class="nprogress-bar">
                     <span style="width: 80%;">80%</span>
                 </div>
                 <h2>HTML&#160;/&#160;CSS</h2>
-                <div class="progress-bar">
+                <div class="nprogress-bar">
                     <span style="width: 90%;">90%</span>
                 </div>
                 <h2>PHP&#160;/&#160;MYSQL</h2>
-                <div class="progress-bar">
+                <div class="nprogress-bar">
                     <span style="width: 70%;">70%</span>
                 </div>
             </div>
         </div>
         <div class="clear"></div>
     </div>
+    <!-- Наталья end -->
     <!-- Варвара start-->
     <link rel="stylesheet" href="./Varvara/css/vvn.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">

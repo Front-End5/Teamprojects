@@ -1,11 +1,15 @@
 .ae-title h1 {
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
     vertical-align: top;
     color: #158483;
     font-size: 18px;
     text-align: center;
     margin-top: 88px;
 }
-
+.ae-title{
+    font-family: 'Raleway', sans-serif;
+}
 .ae-right p {
     text-align: center;
     font-size: 16px;
@@ -17,14 +21,14 @@
 }
 
 .ae-foto {
-    width: 73%;
+    width: 1064px;
     height: 600px;
     float: left;
 }
 
 
 .ae-text {
-    width: 27%;
+    width: 500px;
     height: 600px;
     float: right;
 }
@@ -32,33 +36,75 @@
 .ae-text-p1 {
     margin: 50px 48px 0px 48px;
     text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    animation: fadeIn 1s;
 }
 
 .ae-text-p2 {
     margin: 40px 48px 20px 48px;
     text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    animation: fadeIn 1s;
 }
 
-.ae-hr {
+.ae-hr{
     width: 50px;
     text-align: center;
     color: black;
-    padding: 0px 0px 0px 164px;
+    padding: 0px 0px 0px 220px;
+    animation: fadeIn 1s;
+}
+.ae-hr2 {
+    width: 50px;
+    text-align: center;
+    color: black;
+    padding: 0px 0px 0px 192px;
+    animation: fadeIn 1s;
 }
 
 .ae-text-2 {
+    padding-left: 50px;
     width: 27%;
     height: 600px;
     float: left;
+    animation: fadeIn 1s;
 }
-
-.ae-foto-2 {
-    width: 73%;
+.ae-container {
+    width: 1600px;
+    height: 1200px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+.image-container {
+    position: relative;
+    width: 1064px;
     height: 600px;
     float: right;
+    cursor: pointer;
 }
- 
-.ae-container {
-    width: 1440px;
-    height: 1200px;
+.image-container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+    transition: 0s 9999999s;
+}
+.image-container:hover .after {
+    display: block;
+    background: rgb(48, 138, 124,.6);
+    transition: 3s;
+}
+.kh-h1{
+    color: whitesmoke;
+    padding-top: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 90px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: bolder;
 }
