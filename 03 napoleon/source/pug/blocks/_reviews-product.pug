@@ -1,1 +1,19 @@
 //- Ирина
+.reviews-product
+  .reviews-product__item.txt-large
+    | Reviews
+  .reviews-product__item.txt-small
+    | There are no reviews yet.
+  .reviews-product__item.txt-large
+    | Be the first to review &ldquo;&Pcy;&ocy;&scy;&ucy;&dcy; &ocy;&dcy;&ncy;&ocy;&rcy;&acy;&zcy;&ocy;&vcy;&icy;&jcy; &ncy;&acy; 4 &pcy;&iecy;&rcy;&scy;&ocy;&ncy;&icy;&rdquo;
+  .reviews-product__item.txt-small
+    | &Vcy;&acy;&shcy;&acy; e-mail &acy;&dcy;&rcy;&iecy;&scy;&acy; &ncy;&iecy; &ocy;&pcy;&rcy;&icy;&lcy;&yucy;&dcy;&ncy;&yucy;&vcy;&acy;&tcy;&icy;&mcy;&iecy;&tcy;&softcy;&scy;&yacy;. &Ocy;&bcy;&ocy;&vcy;&rsquo;&yacy;&zcy;&kcy;&ocy;&vcy;i &pcy;&ocy;&lcy;&yacy; &pcy;&ocy;&zcy;&ncy;&acy;&chcy;&iecy;&ncy;i * *
+  .reviews-product__item
+    form(action='index.html')
+      p
+        textarea#message.txt(name='message', placeholder='Your review')
+      .reviews-product__form
+        input.reviews-product__form-item.txt(type='text', name='name', placeholder='Your name', autofocus='')
+        input.reviews-product__form-item.txt(type='email', name='email', placeholder='Your e-mail', id='#', autofocus='')
+      p.contact-submit
+        input#btn(type='submit', value='SUBMIT')
