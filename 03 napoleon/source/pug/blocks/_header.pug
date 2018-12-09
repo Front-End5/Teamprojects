@@ -1,2 +1,33 @@
 //- Костя
-header header
+header.header
+    .header__top
+        .container
+            .d-flex.justify-content-between.align-items-center
+                .logo
+                    a(href=NULL).logo__link
+                        img(src="./img/logo.svg", alt="").logo__img
+                .d-flex.align-items-center
+                    .city
+                        .city__icon
+                        .city__text Ваше місто: 
+                            b Миколаїв
+                    .bag
+                        .bag__icon
+                        .bag__count 0
+    .header__bottom
+        .container
+            .d-flex.justify-content-between.align-items-center
+                nav.nav
+                    button.nav__burger
+                        span
+                        span
+                        span
+                    ul.nav__list
+                        each val in ['Про торт', 'Замовити', 'Відгуки', 'Наша історія', 'Новини', 'Контакты']
+                            li.nav__item: a(href=NULL).nav__link= val
+                .social
+                    ul.social__list
+                        li.social__item: a(href=NULL).social__link fb
+                        li.social__item: a(href=NULL).social__link in
+            
+                    

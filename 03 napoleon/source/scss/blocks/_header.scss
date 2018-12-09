@@ -1,0 +1,6 @@
+.header {
+    background-color: $color-primary;
+    &__top {
+        border-bottom: 1px solid $color-secondary;
+    }
+}
