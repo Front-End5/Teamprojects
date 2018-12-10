@@ -1,0 +1,17 @@
+.beetroot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    &__text {
+        font-weight: 600;
+        line-height: 27px;
+        font-size: 20px;
+        color: $color-back;
+        margin-right: 3px;
+    }
+
+}
