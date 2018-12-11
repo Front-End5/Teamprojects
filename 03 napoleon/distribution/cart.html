@@ -226,6 +226,25 @@
       </div>
       <button type="submit">Submit</button>
     </form>
+    <script>
+      document.addEventListener('DOMContentLoaded',function() {
+      
+          let quantity = document.querySelectorAll('.item__quantity');
+          console.log(quantity);
+          for (let i = 0; i < quantity.length; i++){
+              quantity[i].onchange = updatePrice(i);
+              quantity[i].addEventListener('change',function(){updatePrice(i)});
+      
+          }
+      },false)
+      
+      function updatePrice(i){
+          let price = document.querySelectorAll('.item__price')[i].textContent.split(" ")[0];
+          let quantity = document.querySelectorAll('.item__quantity')[i].value;
+          let total = price * quantity;
+          document.querySelectorAll('.item__total')[i].textContent = total  + ' грн.';
+      }
+    </script>
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -285,24 +304,5 @@
     </footer><a class="beetroot" href="http://">
       <div class="beetroot__text">Powered by students of the</div>
       <object type="image/svg+xml" data="beetroot_logo.svg"><img src="./img/beetroot_logo.svg" alt=""/></object></a>
-    <script>
-      document.addEventListener('DOMContentLoaded',function() {
-      
-          let quantity = document.querySelectorAll('.item__quantity');
-          console.log(quantity);
-          for (let i = 0; i < quantity.length; i++){
-              quantity[i].onchange = updatePrice(i);
-              quantity[i].addEventListener('change',function(){updatePrice(i)});
-      
-          }
-      },false)
-      
-      function updatePrice(i){
-          let price = document.querySelectorAll('.item__price')[i].textContent.split(" ")[0];
-          let quantity = document.querySelectorAll('.item__quantity')[i].value;
-          let total = price * quantity;
-          document.querySelectorAll('.item__total')[i].textContent = total  + ' грн.';
-      }
-    </script>
   </body>
 </html>
