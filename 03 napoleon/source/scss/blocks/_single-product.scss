@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+
+//fonts
+$font_0: Pacifico;
+$font_1: cursive;
+$font_2: Open Sans;
+$font_3: sans-serif;
+
+
+.products {
+    &__foto{
+        margin-top: 87px;
+        margin-left: -15px;
+    }
+    &__content  {
+        margin-top: 87px;
+        margin-left: 15px;
+    }
+    &__content h1 {
+        font-family: $font_0;
+        line-height: 32px;
+        font-size: 36px;
+        color: #4B2507;
+        margin-top: 18px;
+    }
+    &__content h3 {
+        font-family: $font_2;
+        line-height: 32px;
+        font-size: 14px;
+        color: #76A365;
+        padding-top: 27px;
+        margin-bottom: 2px;
+    }
+    &__content h4 {
+        margin-top: -8px;
+        font-family: $font_2;
+        line-height: 32px;
+        font-size: 13px;
+        color: #A4A4A4;
+    }
+    &__content h2 {
+        font-family: $font_2;
+        line-height: 32px;
+        font-size: 25px;
+        color: #DF9130;
+    }
+    &__fotoes{
+        margin-top: 124px;
+    }
+
+
+}
