@@ -33,7 +33,7 @@
     }
 
     &__text {
-        font-family: "OpenSans";
+        font-family: $font-primary;
         line-height: 1.5;
         font-size: 20px;
         color: $color-secondary;
@@ -47,7 +47,7 @@
     }
     
     &__title {
-        font-family: Pacifico;
+        font-family: $font-secondary;
         line-height: 30px;
         font-size: 30px;
         color: $color-secondary;
