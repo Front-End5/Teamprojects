@@ -1,0 +1,77 @@
+.delivery {
+
+    &__header {
+        font-weight: 600;
+        font-size: 18px;
+        padding: 25px 0 0px;
+        margin-bottom: 15px;
+    }
+
+    &__card {
+
+            @media (max-width: 992px) {
+                &--first {
+                    order: 0;
+                    border-right: 1px solid $border-color;
+                }
+
+                &--last {
+                    order: 1;
+                }
+
+                &--middle {
+                    order: 2;
+                    flex-basis: 50%;
+                    justify-content: center;
+                    margin: auto;
+                }
+            }
+            @media (max-width: $medium) {
+                &--first {
+                    border: none;
+                }
+                &--middle {
+                    order: initial;
+                    flex-basis: initial;
+                    justify-content: initial;
+                    margin: initial;
+                }
+            }
+
+        
+
+        
+    }
+
+    &__line {
+        position: relative;
+        height: 100%;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: 1px;
+            background-color: $border-color;
+        }
+    }
+
+    &__district {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-between;
+        padding: 16px 0px 11px 3px;
+
+    }
+    &__inp {
+        color: #676767;
+        font-size: 15px;
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
