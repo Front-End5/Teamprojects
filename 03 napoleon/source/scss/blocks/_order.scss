@@ -13,6 +13,8 @@
 
     .order__main {
         .order_card__wrap {
+            text-align: center;
+
             .order_card__price {
                 z-index: 1000;
                 position: absolute;
@@ -30,6 +32,17 @@
                 p {
                     font-family: $font-primary;
                     color: $color-secondary;
+                    font-size: 20px;
+                }
+                button {
+                    font-family: $font-primary;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: $color-white;
+                    background-color: $color-primary;
+                    border: none;
+                    border-radius: 30px;
+                    padding: 12px 35px;
                 }
             }
         }
