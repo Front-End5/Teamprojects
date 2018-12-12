@@ -1,0 +1,14 @@
+extends ./layout.pug
+
+block title
+    title Сторінка 404
+
+block main
+    .error
+        .container
+            .error__block
+                img(src="./img/404_img.png", alt="")
+                .block__overlay
+                    span.block--header 404
+                    br
+                    span.block--text Упс... щось пішло не так. 
