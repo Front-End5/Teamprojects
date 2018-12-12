@@ -1,0 +1,27 @@
+.error {
+    &__block {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        padding: 92px;
+        .block__overlay {
+            display:inline-block;
+            position: absolute;
+            top: 320px;
+	        left: 0;
+            width: 100%;
+            font-family: $font-secondary;
+            span {
+                &.block--header {
+                    font-size: 120px;
+                    color: #F0C119;
+                }
+                &.block--text {
+                    font-size: 36px;
+                    color: #4B2507;
+                    padding-top: 50px;
+                }
+            }
+        }
+    }
+}
