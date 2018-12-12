@@ -1522,6 +1522,26 @@ template {
   font-weight: bold;
   font-size: 15px; }
 
+.order {
+  padding-top: 75px; }
+  .order .order__header h1.header--title {
+    font-family: "Pacifico", cursive;
+    color: #4B2507;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 32px; }
+  .order .order__main .order_card__wrap .order_card__price {
+    z-index: 1000;
+    position: absolute;
+    text-align: center;
+    left: 100px;
+    top: -15px; }
+  .order .order__main .order_card__wrap .order_card__cake {
+    border: 4px solid #E8AE30;
+    height: 407px; }
+    .order .order__main .order_card__wrap .order_card__cake .order__card_cake--img img {
+      width: 342px; }
+
 .partners__header h1.header--title {
   font-family: "Pacifico", cursive;
   color: #4B2507;
@@ -1616,5 +1636,31 @@ template {
     background: none; }
   .historyAll .imgBackground2 {
     display: none; } }
+
+.error__block {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  padding: 92px; }
+  .error__block .block__overlay {
+    display: inline-block;
+    position: absolute;
+    top: 320px;
+    left: 0;
+    width: 100%;
+    font-family: "Pacifico", cursive; }
+    .error__block .block__overlay span.block--header {
+      font-size: 120px;
+      color: #F0C119; }
+    .error__block .block__overlay span.block--text {
+      font-size: 36px;
+      color: #4B2507;
+      padding-top: 50px; }
+
+.partners__header h1.header--title {
+  font-family: "Pacifico", cursive;
+  color: #4B2507;
+  font-size: 45px;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
