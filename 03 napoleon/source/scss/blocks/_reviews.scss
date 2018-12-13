@@ -1,0 +1,12 @@
+@import "/distribution/plugins/swiper/swiper.css";
+.rewiews{
+    padding-top: 95px;
+    text-align: center;
+    &__h2{
+        margin-bottom: $gutter;
+        margin: 0 auto;
+        font-family: $font-secondary;
+        font-size: 45px;
+        color: $color-secondary;
+    }
+}

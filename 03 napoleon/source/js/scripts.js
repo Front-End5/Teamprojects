@@ -7,3 +7,4 @@
 
 
 //@prepros-append modules/_end.js
+//@prepros-append modules/_rewiew_swiper-slide.js
