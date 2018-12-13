@@ -17,4 +17,24 @@ $font_3: sans-serif;
             color: #4B2507;
         }
     }
+    &__content {
+        background-color: #D6EBDC;
+        
+        & table {
+            color: #706E6E;
+           
+        }
+
+        & table th{
+            padding-right: 75px;
+            text-align: left;
+        }
+        &--orange-text{
+            font-family: $font_2;
+            line-height: 32px;
+            font-size: 14px;
+            color: #DF9130;
+        }
+    }
 }
+

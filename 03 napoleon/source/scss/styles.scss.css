@@ -6,3 +6,16 @@
     font-family: Pacifico;
     line-height: 32px;
     color: #4B2507; }
+
+.your-order__content {
+  background-color: #D6EBDC; }
+  .your-order__content table {
+    color: #706E6E; }
+  .your-order__content table th {
+    padding-right: 75px;
+    text-align: left; }
+  .your-order__content--orange-text {
+    font-family: Open Sans;
+    line-height: 32px;
+    font-size: 14px;
+    color: #DF9130; }

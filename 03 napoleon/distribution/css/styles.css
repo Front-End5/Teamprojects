@@ -1773,6 +1773,19 @@ input::-webkit-inner-spin-button {
     line-height: 32px;
     color: #4B2507; }
 
+.your-order__content {
+  background-color: #D6EBDC; }
+  .your-order__content table {
+    color: #706E6E; }
+  .your-order__content table th {
+    padding-right: 75px;
+    text-align: left; }
+  .your-order__content--orange-text {
+    font-family: Open Sans;
+    line-height: 32px;
+    font-size: 14px;
+    color: #DF9130; }
+
 .order {
   padding-top: 75px; }
   .order .order__header h1.header--title {
