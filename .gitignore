@@ -1,10 +1,8 @@
-Teamprojects2/02/Eskulap Template-Symu_co.psd
+*.html
+css/*.css
+css/*.map
+prepros-6.config
+.DS_Store
 02/Eskulap Template-Symu_co.psd
-01/prepros-6.config
-01/index.1.html
-01/leus/css/style.1.css
-01/leus/css/style.2.css
-03 napoleon/prepros-6.config
-03 napoleon/source/scss/blocks/blocks.scss
-03 napoleon/source/html/blocks/_history-page.html
-03 napoleon/prepros-6.config
+03 napoleon/distribution/css/styles.css
+03 napoleon/distribution/css/styles.css.map
