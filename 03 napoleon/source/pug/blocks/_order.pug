@@ -1,40 +1,47 @@
 //- Варвара
 .order
+    .order__img--left
+        img(src="./img/order/Ресурс 2@4x.png", alt="")
+    .order__img--right
+        img(src="./img/order/Ресурс 1@4x.png", alt="")
     .container
         .order__header
             h1.header--title Зробити Замовлення
         .order__main
             .row.d-flex.justify-content-center
                 .col.col-4.col-xl-4.col-lg-4.col-md-12
-                    .order_card__wrap
-                        .order_card__price
+                    .item
+                        .item__price
                             img(src="./img/order/Group.png", alt="")
                             p 297
                             span грн
-                        .order_card__cake
-                            .order_card__cake--img
+                        .item__cake
+                            .item__cake--img
                                 img(src="./img/order/Rectangle.png", alt="")
-                            p Торт «Миколаївський наполеон» 1,3 кг
+                            p Торт «Миколаївський наполеон» 
+                            p 1,3 кг
+                            button Додати у кошик
+                .col.col-4.col-xl-4.col-lg-4.col-md-
+                    .item
+                        .item__price
+                            img(src="./img/order/Group.png", alt="")
+                            p 297
+                            span грн
+                        .item__cake
+                            .item__cake--img
+                                img(src="./img/order/Rectangle.png", alt="")
+                            p Торт «Миколаївський наполеон» 
+                            p 1,3 кг
                             button Додати у кошик
                 .col.col-4.col-xl-4.col-lg-4.col-md-12
-                    .order_card__wrap
-                        .order_card__price
+                    .item
+                        .item__price
                             img(src="./img/order/Group.png", alt="")
                             p 297
                             span грн
-                        .order_card__cake
-                            .order_card__cake--img
+                        .item__cake
+                            .item__cake--img
                                 img(src="./img/order/Rectangle.png", alt="")
-                            p Торт «Миколаївський наполеон» 1,3 кг
-                            button Додати у кошик
-                .col.col-4.col-xl-4.col-lg-4.col-md-12
-                    .order_card__wrap
-                        .order_card__price
-                            img(src="./img/order/Group.png", alt="")
-                            p 297
-                            span грн
-                        .order_card__cake
-                            .order_card__cake--img
-                                img(src="./img/order/Rectangle.png", alt="")
-                            p Торт «Миколаївський наполеон» 1,3 кг
+                            p Торт «Миколаївський наполеон» 
+                            p 1,3 кг
                             button Додати у кошик
