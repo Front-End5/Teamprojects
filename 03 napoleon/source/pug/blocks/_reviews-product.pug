@@ -1,7 +1,8 @@
-//- Ирина
 .reviews-product
   .reviews-product__item.bottom
-    span &Vcy;&Iukcy;&Dcy;&Gcy;&Ucy;&Kcy;&Icy; (0)
+   
+    span.rev &Vcy;&Iukcy;&Dcy;&Gcy;&Ucy;&Kcy;&Icy; (0)
+    .line
   .reviews-product__item.txt-large
     | &Vcy;&iukcy;&dcy;&gcy;&ucy;&kcy;&icy;
   .reviews-product__item.txt-small
@@ -10,7 +11,7 @@
     | &Bcy;&ucy;&dcy;&softcy; &pcy;&iecy;&rcy;&shcy;&icy;&mcy;, &khcy;&tcy;&ocy; &zcy;&acy;&lcy;&icy;&shcy;&icy;&tcy;&softcy; &vcy;&iukcy;&dcy;&gcy;&ucy;&kcy; &pcy;&rcy;&ocy; &ldquo;&Mcy;&icy;&kcy;&ocy;&lcy;&acy;&yicy;&vcy;&scy;&softcy;&kcy;&icy;&jcy; &ncy;&acy;&pcy;&ocy;&lcy;&iecy;&ocy;&ncy;&rdquo;
   .reviews-product__item.txt-small
     | &Vcy;&acy;&shcy;&acy; e-mail &acy;&dcy;&rcy;&iecy;&scy;&acy; &ncy;&iecy; &ocy;&pcy;&rcy;&icy;&lcy;&yucy;&dcy;&ncy;&yucy;&vcy;&acy;&tcy;&icy;&mcy;&iecy;&tcy;&softcy;&scy;&yacy;. &Ocy;&bcy;&ocy;&vcy;&rsquo;&yacy;&zcy;&kcy;&ocy;&vcy;i &pcy;&ocy;&lcy;&yacy; &pcy;&ocy;&zcy;&ncy;&acy;&chcy;&iecy;&ncy;i *
-  .reviews-product__item
+    .reviews-product__item.reviews-product__item--form
     form(action='index.html')
       p
         textarea#message.txt(name='message', placeholder='Ваш відгук')
@@ -19,4 +20,3 @@
         input.reviews-product__form-item.txt(type='email', name='email', placeholder='Ваш e-mail', id='#', autofocus='')
       p.contact-submit
         input#btn(type='submit', value='Підтвердити')
-

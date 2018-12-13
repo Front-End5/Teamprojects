@@ -1,55 +1,99 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+@media screen and (max-width: $xlarge){
+	
+}
+@media screen and (max-width: $large){
+	.reviews-product__item.bottom{
+		display: none;
+	}
+}
+@media screen and (max-width: $medium){
+	.reviews-product__item.bottom{
+		display: none;
+	}
+	.reviews-product__form {
+		display: flex;
+			flex-wrap: wrap;
+	}
+	.reviews-product__form-item {
+		min-width: 80%;
+		height: 45px;
+		margin-top: 5px;
+	}
+}
+@media screen and (max-width: $small){
+	.bottom{
+		display: none;
+	}
+	.reviews-product__form {
+		display: flex;
+			flex-wrap: wrap;
+	}
+	.reviews-product__form-item {
+		min-width: 80%;
+		height: 45px;
+		margin-top: 5px;
+	}
+}
 
-// span {
-// 	font-family: 'Open Sans';
-// 	font-style: normal;
-// 	font-weight: bold;
-// 	line-height: 32px;
-// 	font-size: 13px;
-// 	color: #5f5f5f;
-// 	margin: 10px;
-// 	margin-bottom: 130px;
-// 	padding-top: 17px;
-// 	padding-left: 17px;
-// 	padding-right: 17px;
-// 	border: 1px solid #dfdfdf;
-// 	border-bottom: none;
-// }
 .bottom {
-	margin-bottom: 60px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content:space-between;
+	margin-bottom: 53px;
+}
+.rev{
+	font-family: $font-primary;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 32px;
+	font-size: 12px;
+    color: $color-base;
+    padding-top: 17px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid #dfdfdf;
+    border-bottom: none;	
+}
+.line{
+	border-bottom: 1px solid #dfdfdf;
+	width: 90%;
+
 }
 .reviews-product {
 	margin-left: 150px;
 	margin-right: 150px;
 }
 .reviews-product__item {
-	margin-left: 18px;
-	margin-top: -10px;
-	padding-top: 15px;
+    margin-left: 18px;
+    margin-top: -10px;
+    padding-top: 18px;
+}
+.reviews-product__item--form{
+	margin-top: -25px;
 }
 .txt-large {
-	font-family: 'Pacifico', 'cursive';
+	font-family: $font-secondary;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 32px;
 	font-size: 35px;
-	color: #4b2507;
+	color:$color-secondary;
 }
 .txt-middle {
-	font-family: 'Pacifico';
+	font-family: $font-secondary;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 32px;
 	font-size: 18px;
-	color: #4b2507;
+	color:$color-secondary;
 }
 .txt-small {
-	font-family: 'Open Sans', 'sans-serif';
+	font-family: $font-primary;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 32px;
 	font-size: 14px;
-	color: #5f5f5f;
+	color:$color-base;
 }
 #message {
 	width: 100%;
@@ -61,8 +105,8 @@
 	box-sizing: border-box;
 }
 #btn {
-	color: #fff;
-	font-family: 'Open Sans';
+	color:$color-white;
+	font-family: $font-primary;
 	font-style: normal;
 	font-weight: bold;
 	line-height: 32px;
@@ -73,7 +117,7 @@
 	height: 47px;
 	left: 407px;
 	top: 1524px;
-	background: #e8ae30;
+	background:$color-primary;
 	border-radius: 45px;
 	margin-top: 30px;
 }
@@ -84,4 +128,5 @@
 .reviews-product__form-item {
 	width: 50%;
 	height: 45px;
+	margin-right: 3px;
 }
