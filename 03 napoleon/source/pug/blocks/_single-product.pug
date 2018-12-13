@@ -1,6 +1,4 @@
 //- Артур
-
-
 .products
     .container 
         .row
@@ -15,10 +13,10 @@
                     h2 297 грн
                 
                 
-                <div class="qty mt-5">
-                    <span class="minus bg-dark">-</span>
-                    <input type="number" class="count" name="qty" value="1">
-                    <span class="plus bg-dark">+</span>
+                <div class="qty mt-5 js-counter">
+                    <span class="minus js-minus bg-dark">-</span>
+                    <input type="number" class="count js-count" name="qty" value="1">
+                    <span class="plus js-plus bg-dark">+</span>
                 </div>
 
                 .products__btn
@@ -29,23 +27,5 @@
                         img(src="./img/Page-product(small02).png", alt="")
                         img(src="./img/Page-product(small03).png", alt="")
                         img(src="./img/Page-product(small04).png", alt="")
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-script.
-        $(document).ready(function(){
-                $('.count').prop('disabled', true);
-                $(document).on('click','.plus',function(){
-                    $('.count').val(parseInt($('.count').val()) + 1 );
-                });
-                $(document).on('click','.minus',function(){
-                    $('.count').val(parseInt($('.count').val()) - 1 );
-                        if ($('.count').val() == 0) {
-                            $('.count').val(1);
-                        }
-                    });
-            });\ 
-//-             <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-//- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
 
