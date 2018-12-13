@@ -1,5 +1,23 @@
 .order {
     padding-top: 75px;
+    padding-bottom: 263px;
+
+    .order__img--left {
+        position: absolute;
+        top: 310px;
+        left: -30px;
+    }
+        .order__img--left img {
+            width: 220px;
+        }
+    .order__img--right {
+        position: absolute;
+        top: 500px;
+        right: -60px;
+    }
+        .order__img--left img {
+            width: 220px;
+        }
 
     .order__header {
         h1.header--title {
@@ -7,34 +25,56 @@
             color: $color-secondary;
             font-size: 45px;
             text-align: center;
-            padding-bottom: 32px;
+            padding-bottom: 50px;
         }
     }
 
     .order__main {
-        .order_card__wrap {
-            text-align: center;
-
-            .order_card__price {
+        .item {
+            .item__price {
                 z-index: 1000;
                 position: absolute;
                 text-align: center;
-                left: 100px;
-                top: -15px;
+                left: 60px;
+                top: -28px;
+
+                p {
+                    font-family: $font-secondary;
+                    color: $color-white;
+                    font-size: 36px;
+                    margin-top: -131px;
+                    margin-left: -11px;
+                    margin-bottom: -4px;
+                }
+                span {
+                    font-family: $font-secondary;
+                    color: $color-white;
+                    font-size: 25px;
+                    margin-left: -13px;
+                }
             }
 
-            .order_card__cake {
+            .item__cake {
                 border: 4px solid #E8AE30;
                 height: 407px;
-                .order__card_cake--img img {
-                    width: 342px;
+                text-align: center;
+
+                .item__cake--img{
+                    padding-bottom: 25px;
                 }
+                .item__cake--img img {
+                    width: 98%;
+                }
+
                 p {
+                    text-align: center;
                     font-family: $font-primary;
                     color: $color-secondary;
-                    font-size: 20px;
+                    font-size: 19px;
                 }
+                
                 button {
+                    margin-top: 26px;
                     font-family: $font-primary;
                     font-weight: 700;
                     font-size: 20px;
@@ -43,6 +83,13 @@
                     border: none;
                     border-radius: 30px;
                     padding: 12px 35px;
+                    cursor: pointer;
+                    transition: all 300ms;
+                }
+                button:hover {
+                    background-color: rgb(233, 152, 1);
+                    border-radius: 15px;
+                    transform: scale(1.1);
                 }
             }
         }
