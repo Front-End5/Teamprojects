@@ -1,0 +1,94 @@
+include ./cart/cart_mixin.pug
+
+.customer
+    .container
+        .row
+            .col
+                p.customer__text ВЖЕ ЗАМОВЛЯЛИ У НАС? 
+                    a(href="javascript:void(0)").customer__link НАТИСНIТЬ СЮДИ, ЩОБ УВIЙТИ
+        .row
+            .col
+                p.customer__text МАЄТЕ КУПОН ЗНИЖКИ? 
+                    a(href="javascript:void(0)").customer__link НАТИСНIТЬ ТУТ, ЩОБ ВВЕСТИ КОД КУПОНУ ЗНИЖКИ
+        .row
+            .col
+                .cart__border
+        .row
+            .col.col-3.hide-lg
+            .col.col-6.col-lg-12
+                .customer__form
+                    h3.customer__header Оплата та доставка
+                    input(type="text", name="fname" required placeholder="Iм'я *").customer__input 
+                    input(type="text", name="lname" required placeholder="Прiзвище *").customer__input 
+                    input(type="text", name="street" required placeholder="Назва вулицi *").customer__input 
+                    input(type="text", name="apt" placeholder="Будинок, квартира, номер в готелi, тощо ( необов'язково )").customer__input 
+                    input(type="tel", name="tel" required placeholder="Телефон *").customer__input 
+                    input(type="email", name="email" required placeholder="Адреса електронної пошти *").customer__input 
+            .col.col-3.hide-lg
+        .row
+            .col.col-12
+                .customer__form
+                    span.customer__check-span
+                        input(type="checkbox", name="create_account" id="create_account").customer__input--checkbox
+                        label(for="create_account").customer__label Створити облiковий запис?
+        .row
+            .col.col-12
+                .customer__form
+                    h3.customer__header Додаткова iнформацiя
+        .row
+            .col.col-3.hide-lg
+            .col.col-6.col-lg-12
+                .customer__form
+                    textarea(name="addlinfo" placeholder="Примiтки до замовлень ( необов'язково )" ).customer__input.customer__input--textarea
+            .col.col-3.hide-lg
+        .row
+            .col.col-12
+                .customer__form
+                    h3.customer__header Ваше замовлення
+
+
+        
+                
+
+.cart
+    .container
+        .row
+            .col
+                .cart__border
+        .row
+            .col
+                .cart__order
+                    h3.cart__subheader.cart__subheader--total Товар                                                                       
+                    .cart__divider
+                    h3.cart__item-name Торт “Миколаївський наполеон” 1,3...
+
+                        
+        
+        .row
+            .col
+                .cart__border
+        .row
+            .col
+                p.cart__subtotal До сплати: 18 ГРН.
+        .row
+            .col
+                .cart__border
+        .row
+            .col
+                h3.delivery__header Доставка
+        .row
+            +delivery(districts)
+    .cart__map
+    .container
+        .row
+            .col
+                .cart__border
+        .row
+            .col
+                h2.cart__grandtotal ЗАГАЛЬНА СУМА: 73 ГРН.
+        .row
+            .col
+                .cart__border
+
+
+
