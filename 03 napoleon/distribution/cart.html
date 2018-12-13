@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Кошик</title><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="logo"><a class="logo__link" href="javascript:void(0)"><img class="logo__img" src="./img/logo.svg" alt=""/></a></div>
+            <div class="d-flex align-items-center">
+              <div class="city">
+                <div class="city__icon"></div>
+                <div class="city__text">Ваше місто: <b>Миколаїв</b></div>
+              </div>
+              <div class="bag">
+                <div class="bag__icon"></div>
+                <div class="bag__count">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <nav class="nav">
+              <button class="nav__burger"><span></span><span></span><span></span></button>
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="javascript:void(0)">Про торт</a></li>
+                <li class="nav__item"><a class="nav__link" href="javascript:void(0)">Замовити</a></li>
+                <li class="nav__item"><a class="nav__link" href="javascript:void(0)">Відгуки</a></li>
+                <li class="nav__item"><a class="nav__link" href="javascript:void(0)">Наша історія</a></li>
+                <li class="nav__item"><a class="nav__link" href="javascript:void(0)">Новини</a></li>
+                <li class="nav__item"><a class="nav__link" href="javascript:void(0)">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="social">
+              <ul class="social__list">
+                <li class="social__item"><a class="social__link" href="javascript:void(0)">fb</a></li>
+                <li class="social__item"><a class="social__link" href="javascript:void(0)">in</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!---->
+    <form class="cart" action="" method="get" id="cart">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="h2 cart__header">Кошик з товарами </div>
+          </div>
+        </div>
+            <div class="row">
+              <div class="col">
+                <div class="cart__border"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-5">
+                <h3 class="cart__subheader">Товар</h3>
+              </div>
+              <div class="col col-2">
+                <h3 class="cart__subheader">Ціна</h3>
+              </div>
+              <div class="col col-3">
+                <h3 class="cart__subheader">Кількість</h3>
+              </div>
+              <div class="col col-2">
+                <h3 class="cart__subheader">Сума</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="cart__border"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-5">
+                <div class="cart__item cart__item--first"><img class="item__delete" src="./img/cart/trash.svg" alt="Видалити"/><img class="item__img" src="./img/cart/item.png" alt="Товар"/>
+                  <p class="item__name">Посуд одноразовий</p>
+                </div>
+              </div>
+              <div class="col col-2">
+                <div class="cart__item">
+                  <p class="item__price">9 грн.</p>
+                </div>
+              </div>
+              <div class="col col-3">
+                <div class="cart__item cart__item--third">
+                  <input class="item__quantity" type="number" name="quantity" value="1" min="1" step="1"/>
+                </div>
+              </div>
+              <div class="col col-2">
+                <div class="cart__item">
+                  <p class="item__total">грн.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="cart__border"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="cart__coupons">
+                  <input class="cart__coupon" type="text" name="coupon" id="coupon" placeholder="Ввести код"/>
+                  <label class="cart__coupon--label" for="coupon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.69117 9.95583L7.67679 2.96632C8.04568 2.59743 8.53883 2.39163 9.05916 2.39163C9.10188 2.39163 9.14459 2.39163 9.1873 2.39551L14.2392 2.72946C14.7867 2.7644 15.2293 3.20707 15.2643 3.75458L15.3847 5.54856C15.6409 5.401 15.8856 5.21461 16.1069 4.99328C16.6467 4.45353 16.9806 3.78176 17.0505 3.09835C17.1165 2.44988 16.9301 1.8713 16.5263 1.46746C15.6681 0.609305 14.0877 0.799575 12.9966 1.88683C12.8141 2.06934 12.519 2.06934 12.3365 1.88683C12.154 1.70433 12.154 1.40922 12.3365 1.22671C13.7965 -0.221669 15.971 -0.408056 17.1903 0.811224C17.796 1.41698 18.0756 2.25961 17.9824 3.19542C17.8931 4.09241 17.4621 4.9661 16.7709 5.65728C16.3826 6.04559 15.9322 6.35235 15.4546 6.56204L15.6021 8.81033C15.6409 9.37337 15.4313 9.92476 15.0313 10.3247L8.0418 17.3142C7.59913 17.7569 7.01279 17.9976 6.38762 17.9976C5.76245 17.9976 5.1761 17.753 4.73343 17.3142L0.683403 13.2642C0.240734 12.8215 -1.52588e-05 12.2352 -1.52588e-05 11.61C0.0038681 10.981 0.248501 10.3946 0.69117 9.95583ZM1.34741 12.6002L5.40132 16.6541C5.66537 16.9182 6.01873 17.0657 6.39538 17.0657C6.77204 17.0657 7.1254 16.9182 7.38945 16.6541L14.379 9.6646C14.5886 9.45491 14.6974 9.16757 14.678 8.87246L14.542 6.83773C14.4644 6.84938 14.3867 6.86103 14.3091 6.8688C14.1926 6.88045 14.0761 6.88821 13.9635 6.88821C13.1674 6.88821 12.4568 6.60863 11.9287 6.08054C11.7462 5.89803 11.7462 5.60292 11.9287 5.42042C12.1112 5.23791 12.4064 5.23791 12.5889 5.42042C12.9927 5.82425 13.5713 6.01064 14.2197 5.94463C14.3091 5.93686 14.3945 5.92133 14.4799 5.9058L14.3401 3.82448C14.3362 3.73905 14.2663 3.67304 14.1809 3.66527L9.12906 3.33133C9.10576 3.33133 9.08246 3.32745 9.05916 3.32745C8.78735 3.32745 8.5233 3.43617 8.33303 3.62644L1.34741 10.6121C1.08336 10.8761 0.935802 11.2295 0.935802 11.6061C0.935802 11.9828 1.08336 12.3361 1.34741 12.6002Z" fill="#A4A4A4"/></svg></label>
+                  <div class="cart__btn">Купон</div>
+                  <div class="cart__btn cart__btn--refresh">
+                    Обновити<svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.76319 16.3877C3.0411 15.0023 1.93908 12.8781 1.93908 10.4957C1.93908 7.2392 4.00119 4.47115 6.88894 3.4077C7.30619 3.25404 7.60982 2.87188 7.60982 2.42723C7.60982 1.81081 7.04258 1.34705 6.4589 1.54526C2.73113 2.81117 0.0488281 6.34031 0.0488281 10.4957C0.0488281 13.3211 1.28935 15.8546 3.2539 17.5861C4.77452 19.0025 5.71957 17.1123 4.76319 16.3877ZM15.6667 3.3371C14.6984 2.46257 13.2807 3.8803 14.2101 4.58262C15.9481 5.96758 17.0613 8.10193 17.0613 10.4957C17.0613 13.7527 14.999 16.5212 12.1115 17.5843C11.6942 17.738 11.3905 18.1202 11.3905 18.5649C11.3905 19.1814 11.9578 19.6452 12.5416 19.4469C16.2692 18.1803 18.9514 14.6516 18.9514 10.4956C18.9514 7.63304 17.6777 5.06999 15.6667 3.3371ZM8.44497 4.81525L11.5214 2.97299C11.969 2.7049 11.9699 2.26824 11.5238 1.99826L8.41895 0.119061C7.97231 -0.150514 7.61184 0.0529822 7.614 0.575005L7.63072 4.35566C7.63207 4.87741 7.99685 5.08334 8.44497 4.81525ZM10.5819 16.1865L7.47659 18.0657C7.03008 18.3357 7.03103 18.7722 7.47915 19.0404L10.5553 20.8828C11.0029 21.1503 11.3685 20.9451 11.3708 20.4227L11.3869 16.6422C11.3886 16.1205 11.0276 15.9169 10.5819 16.1865Z" fill="#676767"/></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="cart__border"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="cart__subtotal">До сплати: 18 ГРН.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="cart__border"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3 class="delivery__header">Доставка</h3>
+              </div>
+            </div>
+            <div class="row"><div class="col col-4">
+<div class="delivery__card delivery__card--first">
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-0" value="55"/>
+                    <label for="district-0">Центр:</label></span>
+<span class="delivery__price">55 грн.<span><br/>
+                  </div>
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-1" value="65"/>
+                    <label for="district-1">Намив:</label></span>
+<span class="delivery__price">65 грн.<span><br/>
+                  </div>
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-2" value="105"/>
+                    <label for="district-2">Тернiвка:</label></span>
+<span class="delivery__price">105 грн.<span><br/>
+                  </div>
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-3" value="85"/>
+                    <label for="district-3">Пiвнiчний:</label></span>
+<span class="delivery__price">85 грн.<span><br/>
+                  </div></div>
+</div>
+<div class="col col-4"><div class="delivery__card">
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-4" value="70"/>
+                    <label for="district-4">Солянi:</label></span>
+<span class="delivery__price">70 грн.<span><br/>
+                  </div>
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-5" value="65"/>
+                    <label for="district-5">Ракетне урочище:</label></span>
+<span class="delivery__price">65 грн.<span><br/>
+                  </div>
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-6" value="75"/>
+                    <label for="district-6">Варварiвка:</label></span>
+<span class="delivery__price">75 грн.<span><br/>
+                  </div>
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-7" value="70"/>
+                    <label for="district-7">Водолiй, ПТЗ, Херсонське шосе:</label></span>
+<span class="delivery__price">70 грн.<span><br/>
+                  </div></div>
+</div>
+<div class="col col-4"><div class="delivery__card delivery__card--last">
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-8" value="85"/>
+                    <label for="district-8">Селище Горького:</label></span>
+<span class="delivery__price">85 грн.<span><br/>
+                  </div>
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-9" value="95"/>
+                    <label for="district-9">Широка балка:</label></span>
+<span class="delivery__price">95 грн.<span><br/>
+                  </div>
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-10" value="115"/>
+                    <label for="district-10">Кульбакiно:</label></span>
+<span class="delivery__price">115 грн.<span><br/>
+                  </div>
+                  <div class="delivery__district"><span class="delivery__inp">
+                    <input type="radio" name="district" id="district-11" value="150"/>
+                    <label for="district-11">Корабельний:</label></span>
+<span class="delivery__price">150 грн.<span><br/>
+                  </div></div>
+</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="cart__border"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h1>Grand Total</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="cart__border"></div>
+              </div>
+            </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      document.addEventListener('DOMContentLoaded',function() {
+      
+          let quantity = document.querySelectorAll('.item__quantity');
+          console.log(quantity);
+          for (let i = 0; i < quantity.length; i++){
+              quantity[i].onchange = updatePrice(i);
+              quantity[i].addEventListener('change',function(){updatePrice(i)});
+      
+          }
+      },false)
+      
+      function updatePrice(i){
+          let price = document.querySelectorAll('.item__price')[i].textContent.split(" ")[0];
+          let quantity = document.querySelectorAll('.item__quantity')[i].value;
+          let total = price * quantity;
+          document.querySelectorAll('.item__total')[i].textContent = total  + ' грн.';
+      }
+    </script>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col col-3">
+            <div class="logo logo--footer">
+              <object type="image/svg+xml" data="logo.svg"><img src="./img/logo.svg" alt=""/></object>
+            </div>
+          </div>
+          <div class="col col-4">
+            <div class="footer__contacts">
+              <div class="footer__title">Контакти</div>
+              <ul class="footer__nav">
+                <li class="footer__item">
+                  <object type="image/svg+xml" data="time.svg"><img src="./img/icons_footer/time.svg" alt=""/></object>
+                  <div class="footer__text"> Щоденно з 9:00 до 22:00</div>
+                </li>
+                <li class="footer__item"><a class="footer__link" href="https://goo.gl/maps/Lg3hmexex1G2"> 
+                    <object type="image/svg+xml" data="location.svg"><img src="./img/icons_footer/location.svg" alt=""/></object>
+                    <div class="footer__text"> Миколаїв, вул. Шевченка, 65</div></a></li>
+                <li class="footer__item"><a class="footer__link" href="tel:+"> 
+                    <object type="image/svg+xml" data="phone.svg"><img src="./img/icons_footer/phone.svg" alt=""/></object>
+                    <div class="footer__text"> +38(095) 488-40-40</div></a></li>
+                <li class="footer__item"><a class="footer__link" href="mailto:"> 
+                    <object type="image/svg+xml" data="mail.svg"><img src="./img/icons_footer/mail.svg" alt=""/></object>
+                    <div class="footer__text"> order@napoleon.mk.ua</div></a></li>
+              </ul>
+              <div class="footer__divider"></div>
+            </div>
+          </div>
+          <div class="col col-5">
+            <div class="footer__location">
+              <div class="footer__title">Придбати торт</div>
+              <ul class="footer__nav">
+                <li class="footer__item"><a class="footer__link" href="">
+                    <object type="image/svg+xml" data="location.svg"><img src="./img/icons_footer/location.svg" alt=""/></object>
+                    <div class="footer__text"> <b>Coffee Blues </b>вул. Московська 47</div></a></li>
+                <li class="footer__item"><a class="footer__link" href="">
+                    <object type="image/svg+xml" data="location.svg"><img src="./img/icons_footer/location.svg" alt=""/></object>
+                    <div class="footer__text"><b>Brobar </b>вул. Корабелiв 1 (ріг вул. Сiнна)</div></a></li>
+                <li class="footer__item"><a class="footer__link" href="">
+                    <object type="image/svg+xml" data="location.svg"><img src="./img/icons_footer/location.svg" alt=""/></object>
+                    <div class="footer__text"> <b>Шоколад </b>вул. 3-слобідська 51</div></a></li>
+                <li class="footer__item"><a class="footer__link" href="">
+                    <object type="image/svg+xml" data="location.svg"><img src="./img/icons_footer/location.svg" alt=""/></object>
+                    <div class="footer__text"> <b>Гіппо </b>вул. Шосейна 15</div></a></li>
+                <li class="footer__item"><a class="footer__link" href="">
+                    <object type="image/svg+xml" data="location.svg"><img src="./img/icons_footer/location.svg" alt=""/></object>
+                    <div class="footer__text"><b>Шоколадный Замок </b>пр-т Миру 25, пр-т Центральний 71А, вул. Космонавтів 68</div></a></li>
+                <li class="footer__item"><a class="footer__link" href="">
+                    <object type="image/svg+xml" data="location.svg"><img src="./img/icons_footer/location.svg" alt=""/></object>
+                    <div class="footer__text"> <b>Брокклін  </b>вул. Потьомкінська, 57</div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><a class="beetroot" href="http://">
+      <div class="beetroot__text">Powered by students of the</div>
+      <object type="image/svg+xml" data="beetroot_logo.svg"><img src="./img/beetroot_logo.svg" alt=""/></object></a>
+  </body>
+</html>

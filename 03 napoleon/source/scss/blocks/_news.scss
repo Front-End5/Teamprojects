@@ -1,0 +1,23 @@
+.news {
+    h1.header--title {
+        font-family: $font-secondary;
+        color: $color-secondary;
+        font-size: 45px;
+        text-align: center;
+    }
+    h2.main--title {
+        font-family: $font-primary;
+        color: $color-secondary;
+        font-size: 24px;
+    }
+    p.main--text {
+        font-family: $font-primary;
+        line-height: 27px;
+        font-size: 16px;
+        color: #815939;
+        padding-bottom: 20px;
+    }
+    &__link {
+        text-decoration: none;
+    }
+}
