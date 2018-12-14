@@ -5,22 +5,23 @@
         margin: 0;
         padding: 0;
         display: flex;
-        max-width: 950px;
-        margin-left: -30px;
+        // max-width: 950px;
+        margin-left: -35px;
     }
     &__item {
         text-align: center;
         border-right: 1px solid $color-secondary;
-        padding: 0 30px;
+        padding: 0 35px;
     }
     &__link {
         font-family: $font-primary;
         font-weight: 600;
         line-height: 1;
-        font-size: 19px;
+        @include rem(19);
         text-align: center;
         color: $color-secondary;
         text-decoration: none;
+        letter-spacing: -.01em;
         &:hover, &:focus {
             text-decoration: underline;
         }

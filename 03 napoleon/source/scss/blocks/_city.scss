@@ -1,0 +1,13 @@
+.city {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    &__icon {
+        max-width: 15px;
+        height: 20px;
+        margin-right: 8px;
+    }
+    &__text {
+        @include rem(18);
+    }
+}

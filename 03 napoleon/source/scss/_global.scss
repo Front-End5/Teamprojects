@@ -1,0 +1,12 @@
+html {
+    font-family: $font-primary;
+}
+
+h1, h2, h3, h4 {
+    font-family: $font-secondary;
+}
+
+h2 {
+    @include rem($font-size-secondary);
+    color: $color-secondary;
+}
