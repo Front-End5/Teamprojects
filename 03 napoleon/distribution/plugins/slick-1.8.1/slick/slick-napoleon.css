@@ -166,18 +166,20 @@
     background: transparent;
     border: 3px solid #FBB033;
     border-radius: 50%;
+    transition: ease .2s;
+    transition-property: border-color, background-color;
 }
-.slick-dots li button:hover,
-.slick-dots li button:focus
+.slick-dots li.slick-active button
 {
-    outline: none;
+    background-color: #FBB033;
+}
+.slick-dots li button:hover
+{
+    border-color: #4B2507;
+    background-color: #4B2507;
 }
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
     opacity: 1;
-}
-.slick-dots li.slick-active button
-{
-    background-color: #FBB033;
 }
