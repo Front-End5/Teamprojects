@@ -9,7 +9,7 @@ img {
     display: block;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h4 {
     font-family: $font-secondary;
     text-transform: capitalize;
 }
@@ -17,4 +17,11 @@ h1, h2, h3, h4 {
 h2 {
     @include rem($font-size-secondary);
     color: $color-secondary;
+}
+h3 {
+    // font-family: $font-primary;
+    text-transform: capitalize;
+    @include rem(24);
+    color: $color-secondary;
+    line-height: 1.4;
 }

@@ -5,7 +5,16 @@ const reviewSlider = $('.js-reviews-slider'),
 			slidesToShow: 2,
 			slidesToScroll: 2,
 			dots: true,
-			arrows: false
+			arrows: false,
+			responsive: [
+				{
+				  breakpoint: 1024,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				  }
+				}
+			]
 		};
 
 $(reviewSlider).slick(reviewSliderOptions);
