@@ -3,6 +3,7 @@
     text-decoration: none;
     border: none;
     background: none;
+    display: inline-block;
     // other main button styles
     font-family: $font-primary;
     font-weight: 700;
@@ -23,6 +24,6 @@
     // size modifications
     &--normal {
         border-radius: 30px;
-        padding: 12px 35px;
+        padding: 15px 25px;
     }
 }
