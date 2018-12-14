@@ -1,12 +1,4 @@
 $border-color: #C6BAB1;
-@mixin placeholder {
-    ::-webkit-input-placeholder {@content}
-    :-moz-placeholder           {@content}
-    ::-moz-placeholder          {@content}
-    :-ms-input-placeholder      {@content}  
-  
-}
-
 @import './cart/_cart.scss';
 @import './cart/_item.scss';
 @import './cart/delivery';

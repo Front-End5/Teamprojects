@@ -8,7 +8,7 @@ const reviewSlider = $('.js-reviews-slider'),
 			arrows: false,
 			responsive: [
 				{
-				  breakpoint: 1024,
+				  breakpoint: 993,
 				  settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
