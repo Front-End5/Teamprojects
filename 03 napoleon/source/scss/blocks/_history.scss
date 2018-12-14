@@ -1,42 +1,31 @@
-
 .history {
-    background: url(../img/history/history-bg.jpg) 50% 100%;
-    height: 684px;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    color: #4B2507;
-    font-family: "Open Sans", sans-serif;
+    background-image: url('../img/bg--history.jpg');
+    background-size: cover;
+    min-height: 684px;
     text-align: center;
-    &__title {
-        height: 74px;
-        padding: 0;
-        padding-top: 150.84px;
-        font-family: "Pacifico", cursive;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 45px;
-        font-size: 48px;
-        margin: 0;
+    padding: 110px 0;
+    /* @2x Images (Pixel Ratio of 1.25+) */
+    @media only screen and (-o-min-device-pixel-ratio: 5/4),
+    only screen and (-webkit-min-device-pixel-ratio: 1.25),
+    only screen and (min-device-pixel-ratio: 1.25),
+    only screen and (min-resolution: 1.25dppx) {
+        background-image: url('../img/bg--history@2x.jpg');
     }
     &__text {
-        padding-top: 60.84px;
         font-style: normal;
         font-weight: normal;
-        line-height: 40px;
-        font-size: 30px;
-        color: #753C0F;
+        line-height: 1.3;
+        @include rem(30);
+        color: $color-secondary;
     }
     &__btn {
-        width: 213.65px;
-        height: 30px;
-        top: 289.42px;
-        color: #4B2507;
+        color: $color-secondary;
         font-style: normal;
         font-weight: bold;
-        line-height: 30px;
-        font-size: 20px;
-        -webkit-text-decoration-line: underline;
-        text-decoration-line: underline;
-        text-align: center;
+        line-height: 1.3;
+        @include rem(20);
+        &:hover, &:focus {
+            text-decoration: none;
+        }
     }
 }
