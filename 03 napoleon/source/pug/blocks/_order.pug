@@ -1,14 +1,14 @@
 //- Варвара
 .order
     .order__img.order__img--left
-        img(src="./img/order/Ресурс 2@4x.png", alt="")
+        img(src="./img/bg--order-left.png", alt="", srcset="./img/bg--order-left@2x.png 2x")
     .order__img.order__img--right
-        img(src="./img/order/Ресурс 1@4x.png", alt="")
+        img(src="./img/bg--order-right.png", alt="", srcset="./img/bg--order-right@2x.png 2x")
     .container
         .order__header
             h2 Зробити Замовлення
         .order__main
-            .row.d-flex.justify-content-center
+            .row
                 .col.col-4.col-xl-4.col-lg-4.col-md-12
                     .order-item
                         .order-item__price
@@ -20,7 +20,7 @@
                                 img(src="./img/order/Rectangle.png", alt="")
                             a(href=NULL).order-item__title Торт «Миколаївський наполеон» 1,3 кг
                             a(href=NULL).btn.btn--primary.btn--normal Додати у кошик
-                .col.col-4.col-xl-4.col-lg-4.col-md-
+                .col.col-4.col-xl-4.col-lg-4.col-md-12
                     .order-item
                         .order-item__price
                             img(src="./img/order/Group.png", alt="")

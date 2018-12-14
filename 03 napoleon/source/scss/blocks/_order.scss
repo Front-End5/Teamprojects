@@ -20,15 +20,15 @@
         }
     }
     &__main {
-        padding-top: 30px;
     }
     &-item {
+        padding-top: 30px;
         &__price {
             z-index: 1;
             position: absolute;
             text-align: center;
             left: 50px;
-            top: -25px;
+            top: 5px;
             p {
                 font-family: $font-secondary;
                 color: $color-white;
