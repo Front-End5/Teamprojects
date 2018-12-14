@@ -1,0 +1,69 @@
+.shop {
+
+    
+
+    &__card {
+        &-small {
+            margin: 15px 0;
+            display: flex;
+        }
+
+        &-big {
+            display: flex;
+            flex-direction: column;
+            margin: 15px 15px 0 0;
+        }
+    }
+}
+
+
+.card {
+    &__img {
+        display: block;
+        border: 1px solid $border-color;
+    }
+
+    &__header {
+        font-weight: normal;
+        font-size: 10px;
+        color: #E8AE30;
+    }
+
+    &__name {
+        font-weight: normal;    
+        line-height: 1.8;
+        font-size: 13px;
+        color: #696152;
+
+        &--small {
+            font-size: 12px;
+        }
+    }
+
+    &__content {
+        flex: 1 1 50%;
+    }
+
+    &__img {
+        flex: 1 0 50%;
+    }
+
+    &__price {
+        font-family: Open Sans;
+        font-weight: bold;
+        line-height: 2;
+        font-size: 16px;
+        color: #E8AE30;
+        &--small {
+            font-size: 14px;
+        }
+    }
+
+    &-small {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+   
+}
