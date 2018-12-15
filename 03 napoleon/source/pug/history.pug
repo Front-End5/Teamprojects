@@ -4,5 +4,12 @@ block title
     title Наша Історія
 
 block main
+    .breadcrumbs
+        .container
+            .d-flex.justify-content-between
+                .breadcrumbs__current Історія
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item: a.breadcrumbs__link(href=NULL) Домівка
+                    li.breadcrumbs__item Історія
     include ./blocks/_history-page.pug
     include ./blocks/_information.pug

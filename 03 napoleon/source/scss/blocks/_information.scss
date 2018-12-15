@@ -1,7 +1,10 @@
 .information {
-    background-color: $color-primary;
-    margin-top: 125px;
+    overflow: hidden;
+    padding-top: 125px;
+    &__wrap {
+        background-color: $color-primary;
 
+    }
 }
 
 .information .container {
@@ -14,22 +17,34 @@
     font-family: $font-primary;
     display: flex;
     position: relative;
+    @media screen and (max-width: $large) {
+        height: auto;
+    }
 }
 
 .information__img {
     position: absolute;
     top: -148px;
     right: -176px;
+    @media screen and (max-width: $large) {
+        position: static;
+    }
 }
 
 .information__bg1 {
     position: absolute;
     top: -274px;
     left: -150px;
+    @media screen and (max-width: $large) {
+        display: none;
+    }
 }
 
 .information__bg2 {
     position: absolute;
     top: -87px;
     right: 38px;
+    @media screen and (max-width: $large) {
+        display: none;
+    }
 }

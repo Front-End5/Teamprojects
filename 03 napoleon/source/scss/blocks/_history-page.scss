@@ -63,13 +63,15 @@
         }
 
     }
-  
 }
 @media screen and (max-width: $xlarge) {
+    .imgBackground1, .imgBackground2 {
+        display: none;
+    }
     .historyAll {
         text-align: center;
         img {
-           width: 80%;
+        //    width: 80%;
           
         }
         .row--img{
@@ -88,10 +90,10 @@
     }
 }
 @media screen and (max-width: $large) {
-    .historyAll {
-        padding-top: 300px;
+    // .historyAll {
+    //     padding-top: 300px;
 
-    }
+    // }
 }
 
 @media screen and (max-width: $medium) {
