@@ -1,20 +1,17 @@
 //- Катя Д
-proposition.proposition
-    .proposition
-        .container
-            .row.row--proposition
-                .col
-                    .proposition__text
-                        h1 Акційна Пропозиція
-                        p Безкоштовна доставка від
+.proposition
+    .container
+        .row
+            .col.col-6.col-lg-12
+                .proposition__text
+                    h2 Акційна Пропозиція
+                    p Безкоштовна доставка від 
                         span 2 тортів.
-                        p У вас вдома за 
+                        br
+                        | У вас вдома за 
                         span 60 хвилин
-                    a.proposition__link(href="tel:+") 
-                                object(type="image/svg+xml" data="phone.svg")
-                                    img(src="./img/icons_footer/phone.svg", alt="")
-                                .footer__text Замовити
-                .col
-                    .proposition__pic
-                        img(src="./img/proposition_cake.png", alt="")
-                        img(src="./img/proposition_bg.png", alt="")
+                    a.btn.btn--primary.btn--normal(href="tel:+") Замовити
+            .col.col-6.col-lg-12
+                .proposition__pic
+                    img(src="./img/img--proposition.png", alt="", srcset="./img/img--proposition@2x.png 2x")
+                    img(src="./img/bg--proposition.png", alt="", srcset="./img/bg--proposition@2x.png 2x").proposition__bg

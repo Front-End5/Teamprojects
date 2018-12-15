@@ -1,7 +1,9 @@
 html {
     font-family: $font-primary;
 }
-
+body {
+    overflow-x: hidden;
+}
 img {
     width: 100%;
     height: auto;

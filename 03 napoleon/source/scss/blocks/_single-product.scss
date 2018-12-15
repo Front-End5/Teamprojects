@@ -160,11 +160,6 @@ $font_3: sans-serif;
     border: 1px solid black;
 }
 /*Prevent text selection*/
-span{
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-}
 .count{  
     border: 0;
     width: 2%;
