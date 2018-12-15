@@ -1,96 +1,83 @@
 .order {
-    padding-top: 75px;
-    padding-bottom: 263px;
-
-    .order__img--left {
+    padding-top: 50px;
+    padding-bottom: 105px;
+    position: relative;
+    &__img {
         position: absolute;
-        top: 310px;
-        left: -30px;
-    }
-        .order__img--left img {
-            width: 220px;
+        pointer-events: none;
+        &--left {
+            top: 135px;
+            left: 35px;
         }
-    .order__img--right {
-        position: absolute;
-        top: 500px;
-        right: -60px;
-    }
-        .order__img--left img {
-            width: 220px;
+        &--right {
+            top: 280px;
+            right: 35px;
         }
-
-    .order__header {
-        h1.header--title {
-            font-family: $font-secondary;
-            color: $color-secondary;
-            font-size: 45px;
+    }
+    &__header {
+        h2 {
             text-align: center;
-            padding-bottom: 50px;
         }
     }
-
-    .order__main {
-        .item {
-            .item__price {
-                z-index: 1000;
-                position: absolute;
-                text-align: center;
-                left: 60px;
-                top: -28px;
-
-                p {
-                    font-family: $font-secondary;
-                    color: $color-white;
-                    font-size: 36px;
-                    margin-top: -131px;
-                    margin-left: -11px;
-                    margin-bottom: -4px;
-                }
-                span {
-                    font-family: $font-secondary;
-                    color: $color-white;
-                    font-size: 25px;
-                    margin-left: -13px;
+    // &__main {
+    // }
+    &-item {
+        padding-top: 30px;
+        &__price {
+            z-index: 1;
+            position: absolute;
+            text-align: center;
+            left: 50px;
+            top: 5px;
+            p {
+                font-family: $font-secondary;
+                color: $color-white;
+                @include rem(36);
+                margin-top: -123px;
+                margin-left: -11px;
+                margin-bottom: -8px;
+            }
+            span {
+                font-family: $font-secondary;
+                color: $color-white;
+                @include rem(25);
+                margin-left: -15px;
+            }
+        }
+        &__cake {
+            // height: 407px;
+            text-align: center;
+        }
+        &__img{
+            display: block;
+            border: 4px solid $color-primary;
+            min-height: 415px;
+            width: 100%;
+            overflow: hidden;
+            img {
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+                transition: ease transform $timing;
+            }
+            &:hover {
+                img {
+                    transform: scale(.9);
                 }
             }
-
-            .item__cake {
-                border: 4px solid #E8AE30;
-                height: 407px;
-                text-align: center;
-
-                .item__cake--img{
-                    padding-bottom: 25px;
-                }
-                .item__cake--img img {
-                    width: 98%;
-                }
-
-                p {
-                    text-align: center;
-                    font-family: $font-primary;
-                    color: $color-secondary;
-                    font-size: 19px;
-                }
-                
-                button {
-                    margin-top: 26px;
-                    font-family: $font-primary;
-                    font-weight: 700;
-                    font-size: 20px;
-                    color: $color-white;
-                    background-color: $color-primary;
-                    border: none;
-                    border-radius: 30px;
-                    padding: 12px 35px;
-                    cursor: pointer;
-                    transition: all 300ms;
-                }
-                button:hover {
-                    background-color: rgb(233, 152, 1);
-                    border-radius: 15px;
-                    transform: scale(1.1);
-                }
+        }
+        &__title {
+            text-align: center;
+            font-family: $font-primary;
+            color: $color-secondary;
+            @include rem(19);
+            margin: 25px 20px 30px;
+            display: inline-block;
+            text-decoration: none;
+            line-height: 1.3;
+            &:hover, &:focus {
+                text-decoration: underline;
             }
         }
     }

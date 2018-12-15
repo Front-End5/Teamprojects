@@ -1,0 +1,27 @@
+html {
+    font-family: $font-primary;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h4 {
+    font-family: $font-secondary;
+    text-transform: capitalize;
+}
+
+h2 {
+    @include rem($font-size-secondary);
+    color: $color-secondary;
+}
+h3 {
+    // font-family: $font-primary;
+    text-transform: capitalize;
+    @include rem(24);
+    color: $color-secondary;
+    line-height: 1.4;
+}

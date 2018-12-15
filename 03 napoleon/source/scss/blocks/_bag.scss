@@ -1,0 +1,26 @@
+.bag {
+    position: relative;
+    padding-right: 25px;
+    &__count {
+        position: absolute;
+        top: -12px;
+        right: 5px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: $color-secondary;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include rem(13);
+    }
+    path {
+        transition: fill $timing ease;
+    }
+    &:hover, &:focus {
+        path {
+            fill: $color-white !important;
+        }
+    }
+}
