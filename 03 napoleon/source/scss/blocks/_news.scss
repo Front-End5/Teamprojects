@@ -34,6 +34,9 @@
         &:nth-child(2) {
             a:first-child {
                 order: 2;
+                @media screen and (max-width: $medium) {
+                    order: 1;
+                }
             }
             .news__link h3 {
                 margin-top: 10px;

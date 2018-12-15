@@ -2,5 +2,8 @@
     &--footer {
         max-width: 192px;
         display: block;
+        @media screen and (max-width: $medium) {
+            margin: 0 auto;
+        }
     }
 }

@@ -29,8 +29,50 @@
     &__burger {
         display: none;
         width: 42px;
-        height: 42px;
-        background-color: black;
+        height: 38px;
+        background: none;
+        border: none;
+        padding: 0;
+        position: relative;
+        cursor: pointer;
+        span {
+            display: block;
+            height: 5px;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            background-color: $color-secondary;
+            position: absolute;
+            transition: $timing all ease;
+            transform-origin: center;
+            &:first-child {
+                top: 0;
+            }
+            &:nth-child(2) {
+                top: 50%;
+                transform: translateY(-50%) scale(1);
+            }
+            &:last-child {
+                bottom: 0;
+                top: auto;
+            }
+        }
+        &.is-active {
+            span {
+                &:first-child {
+                    top: 50%;
+                    transform: translateY(-50%) rotateZ(45deg);
+                }
+                &:nth-child(2) {
+                    transform: translateY(-50%) scale(0);
+                }
+                &:last-child {
+                    // top: 50%;
+                    bottom: 50%;
+                    transform: translateY(50%) rotateZ(-45deg);
+                }
+            }
+        }
     }
 }
 
@@ -65,11 +107,14 @@
             border-right: none;
             width: $container-width-medium - $gutter;
             // display: none;
+            z-index: 10;
+            background-color: $color-primary;
+            transform: translateY(10px);
         }
         &__link {
             padding: 12px 0;
             flex-grow: 1;
-            &:focus {
+            &:focus, &:hover {
                 background-color: $color-white;
                 text-decoration: none;
             }
@@ -94,7 +139,7 @@
         &__list {
             left: -$gutter/2;
             width: 100vw;
-            // display: none;
+            display: none;
         }
     }
 }

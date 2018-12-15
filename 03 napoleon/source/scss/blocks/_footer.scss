@@ -52,6 +52,9 @@
         font-size: 30px;
         color: $color-secondary;
         margin-bottom: 17px;
+        @media screen and (max-width: $medium) {
+            margin: 1em 0;
+        }
     }
 
     &__contacts {

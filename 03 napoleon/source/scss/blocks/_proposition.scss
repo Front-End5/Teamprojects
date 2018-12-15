@@ -9,6 +9,9 @@
         flex-direction: column;
         justify-content: center;
         height: 100%;
+        @media screen and (max-width: $large) {
+            padding-bottom: 40px;
+        }
     }
     h2 {
         margin: 0;
@@ -29,6 +32,9 @@
             position: relative;
             z-index: 2;
             pointer-events: none;
+            @media screen and (max-width: $large) {
+                width: 100%;
+            }
         }
     }
     &__bg {
@@ -36,5 +42,9 @@
         top: -225px;
         left: -185px;
         z-index: 1 !important;
+        width: auto !important;
+        @media screen and (max-width: $medium) {
+            display: none;
+        }
     }
 }

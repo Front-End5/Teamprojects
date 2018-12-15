@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     margin-right: 30px;
+    color: $color-secondary;
+    @media screen and (max-width: $medium) {
+        margin: 0 15px;
+    }
     &__icon {
         max-width: 15px;
         height: 20px;
@@ -9,5 +13,10 @@
     }
     &__text {
         @include rem(18);
+        @media screen and (max-width: $medium) {
+            span {
+                display: none;
+            }
+        }
     }
 }
