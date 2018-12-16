@@ -4,5 +4,13 @@ block title
     title Страница продукта
 
 block main
+    .breadcrumbs
+        .container
+            .d-flex.justify-content-between
+                .breadcrumbs__current Миколаївський наполеон
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item: a.breadcrumbs__link(href=NULL) Домівка
+                    li.breadcrumbs__item: a.breadcrumbs__link(href=NULL) Магазин
+                    li.breadcrumbs__item Миколаївський наполеон
     include ./blocks/_single-product.pug
     include ./blocks/_reviews-product.pug

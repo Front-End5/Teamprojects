@@ -24,26 +24,27 @@ mixin select(options)
         else
             option(value=`${name}`) #{option}
 //- SHIT GOES DOWN (unless you are in space)
-.container
-    .row
-        .col.col-3
-            form(action="#" method="get")
-                input(type="text", name="search" placeholder="Пошук...").shop__search
-                input(type="submit", value="Пошук").shop__search--submit 
-            .shop__hor-line
-            h2.shop__products.
-                Продукти
-            +smallProducts(productsSmall,'small')
-        .col.col-9
-            .row
-                h2.shop__header.
-                    Магзаин
-            .row
-                select(name="filter").shop__select
-                    +select(selectOptions)
-                .shop__shown.
-                    Показано 3 результати
-                .shop__btn.shop__btn--list
-                .shop__btn.shop__btn--card
-            .row
-                +smallProducts(productBig,'big')
+.shop
+    .container
+        .row
+            .col.col-3
+                form(action="#" method="get")
+                    input(type="text", name="search" placeholder="Пошук...").shop__search
+                    input(type="submit", value="Пошук").shop__search--submit 
+                .shop__hor-line
+                h2.shop__products.
+                    Продукти
+                +smallProducts(productsSmall,'small')
+            .col.col-9
+                .row
+                    h2.shop__header.
+                        Магзаин
+                .row
+                    select(name="filter").shop__select
+                        +select(selectOptions)
+                    .shop__shown.
+                        Показано 3 результати
+                    .shop__btn.shop__btn--list
+                    .shop__btn.shop__btn--card
+                .row
+                    +smallProducts(productBig,'big')

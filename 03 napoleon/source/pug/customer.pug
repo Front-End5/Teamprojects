@@ -1,7 +1,14 @@
 extends ./layout.pug
 
 block title
-    title Кошик
+    title Оформлення замовлення
 
 block main
+    .breadcrumbs
+        .container
+            .d-flex.justify-content-between
+                .breadcrumbs__current Оформлення замовлення
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item: a.breadcrumbs__link(href=NULL) Домівка
+                    li.breadcrumbs__item Оформлення замовлення
     include ./blocks/_customer.pug

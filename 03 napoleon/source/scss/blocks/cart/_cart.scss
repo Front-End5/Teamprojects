@@ -1,6 +1,5 @@
-
 .cart {
-
+    padding: 75px 0;
     text-align: center;
     font-family: $font-primary;
     color: $color-primary;
@@ -51,6 +50,11 @@
         font-weight: 600;
         &--first {
             border-right: 1px solid $border-color;
+            img {
+                &:first-child {
+                    width: auto;
+                }
+            }
         }
         
         &--third {

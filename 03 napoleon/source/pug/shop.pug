@@ -4,4 +4,11 @@ block title
     title Кошик
 
 block main
+    .breadcrumbs
+        .container
+            .d-flex.justify-content-between
+                .breadcrumbs__current Магазин
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item: a.breadcrumbs__link(href=NULL) Домівка
+                    li.breadcrumbs__item Магазин
     include ./blocks/_shop.pug
