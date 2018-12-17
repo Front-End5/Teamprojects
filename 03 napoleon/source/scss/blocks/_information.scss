@@ -48,3 +48,17 @@
         display: none;
     }
 }
+
+@media screen and (max-width: $xlarge) {
+    .information__bg1 img {
+        left: 50px;
+        top: 78px;
+        position: relative;
+    }
+    .information__bg2 img {
+        position: relative;
+        padding-top: 137px;
+        left: 175px;
+        width: 250px;
+    }
+}
