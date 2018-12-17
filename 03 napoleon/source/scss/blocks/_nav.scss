@@ -22,8 +22,10 @@
         color: $color-secondary;
         text-decoration: none;
         letter-spacing: -.01em;
+        transition: ease $timing color;
         &:hover, &:focus {
             text-decoration: underline;
+            color: $color-white;
         }
     }
     &__burger {

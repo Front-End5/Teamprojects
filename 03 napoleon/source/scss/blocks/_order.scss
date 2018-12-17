@@ -23,6 +23,9 @@
     // }
     &-item {
         padding-top: 30px;
+        @media screen and (max-width: $small) {
+            padding-bottom: $gutter*2;
+        }
         &__price {
             z-index: 1;
             position: absolute;
