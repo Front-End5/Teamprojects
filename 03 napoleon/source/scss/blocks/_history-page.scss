@@ -114,6 +114,17 @@
     }
 }
 @media screen and (max-width: $large) {
+    .imgBackground1 {
+        left: -200px !important;
+        top: 110px !important;
+        width: 50%;
+    }
+    .imgBackground2 {
+        top: 1080px !important;
+        width: 50%;
+        right: -220px !important;
+    
+    }
     .historyAll {
         .historyAll__img {
             padding-bottom: $gutter/2;
