@@ -8,12 +8,12 @@
         // max-width: 950px;
         margin-left: -35px;
     }
-    &__item {
+    &__item, li {
         text-align: center;
         border-right: 1px solid $color-secondary;
         padding: 0 35px;
     }
-    &__link {
+    &__link, a {
         font-family: $font-primary;
         font-weight: 600;
         line-height: 1;
