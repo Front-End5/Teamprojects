@@ -80,7 +80,7 @@
 
 @media screen and (max-width: $xlarge) {
     .nav {
-        &__item {
+        &__item, li {
             padding: 0 20px;
         }
     }
@@ -90,7 +90,7 @@
     .nav {
         position: relative;
         padding: 10px 0;
-        &__item {
+        &__item, li {
             padding: 0;
             border: none;
             display: flex;
@@ -98,7 +98,7 @@
                 border-bottom: 1px solid $color-base;
             }
         }
-        &__list {
+        &__list, ul {
             margin: 0;
             display: none;
             flex-direction: column;
@@ -113,11 +113,11 @@
             background-color: $color-primary;
             transform: translateY(18px);
         }
-        &__link {
+        &__link, a {
             padding: 12px 0;
             flex-grow: 1;
             &:focus, &:hover {
-                background-color: $color-white;
+                // background-color: $color-white;
                 text-decoration: none;
             }
         }
@@ -129,7 +129,7 @@
 
 @media screen and (max-width: $medium) {
     .nav {
-        &__list {
+        &__list, ul {
             width: $container-width-small - $gutter;
             display: none;
             transform: translateY(10px);
@@ -140,7 +140,7 @@
 @media screen and (max-width: $small) {
     .nav {
         padding: 5px 0;
-        &__list {
+        &__list, ul {
             left: -$gutter/2;
             width: 100vw;
             display: none;
