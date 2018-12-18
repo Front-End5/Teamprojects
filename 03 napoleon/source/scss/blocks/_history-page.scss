@@ -24,6 +24,7 @@
         text-align: center;
         line-height: 32px;
     }
+    
     .row--img{
         background-image: url(../img/historyPage_4_1.png);
         background-position-y: center;
@@ -65,8 +66,24 @@
     }
 }
 @media screen and (max-width: $xlarge) {
-    .imgBackground1, .imgBackground2 {
-        display: none;
+    .row--img {
+        background-position-x: 15% !important;
+    }
+    .row--imgLeft {
+        background-position-x: 90% !important;
+    }
+    .imgBackground1 {
+        display: block;
+        width: 60%;
+        left: -280px !important;
+        top: 75px !important;
+    
+    }
+    .imgBackground2  {
+        display: block;
+        width: 60%;
+        top: 1260px !important;
+        right: -295px !important;
     }
     .historyAll {
         text-align: center;
@@ -74,11 +91,18 @@
         //    width: 80%;
           
         }
+        .historyAll__img {
+            padding-bottom: $gutter/2;
+        }
+        .historyAll__txt {
+            padding-bottom: 100px;
+        }
         .row--img{
-            background: none;
+            // padding-top: 100px;
+            // background: none;
         }
         .row--imgLeft{
-            background: none;
+            // background: none;
         }
         .historyAll__img--stage{
             display: flex;
@@ -90,10 +114,22 @@
     }
 }
 @media screen and (max-width: $large) {
-    // .historyAll {
-    //     padding-top: 300px;
-
-    // }
+    .imgBackground1 {
+        left: -200px !important;
+        top: 110px !important;
+        width: 50%;
+    }
+    .imgBackground2 {
+        top: 1080px !important;
+        width: 50%;
+        right: -220px !important;
+    
+    }
+    .historyAll {
+        .historyAll__img {
+            padding-bottom: $gutter/2;
+        }
+    }
 }
 
 @media screen and (max-width: $medium) {
