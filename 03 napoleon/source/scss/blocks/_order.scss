@@ -22,7 +22,9 @@
     // &__main {
     // }
     &-item {
+        padding: 0 $gutter/2;
         padding-top: 30px;
+        position: relative;
         @media screen and (max-width: $small) {
             padding-bottom: $gutter*2;
         }
