@@ -1,7 +1,7 @@
 // order slider
 const orderSlider = $('.js-order-slider'),
 		orderSliderOptions = {
-            autoplay: false,
+			autoplay: false,
 			infinite: false,
 			slidesToShow: 3,
 			slidesToScroll: 1,
@@ -12,21 +12,24 @@ const orderSlider = $('.js-order-slider'),
 				  breakpoint: 993,
 				  settings: {
 					slidesToShow: 2,
-                    arrows: true
+					infinite: false,
+					arrows: true
 				  }
 				},
 				{
 				  breakpoint: 769,
 				  settings: {
 					slidesToShow: 1,
-                    arrows: true
+					infinite: false,
+					arrows: true
 				  }
 				},
 				{
 				  breakpoint: 569,
 				  settings: {
 					slidesToShow: 1,
-                    dots: true
+					infinite: false,
+					dots: true
 				  }
 				}
 			]
