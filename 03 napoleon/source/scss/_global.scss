@@ -22,7 +22,7 @@ h2 {
 }
 h3 {
     // font-family: $font-primary;
-    text-transform: capitalize;
+    // text-transform: capitalize;
     @include rem(24);
     color: $color-secondary;
     line-height: 1.4;
