@@ -6,6 +6,7 @@ const reviewSlider = $('.js-reviews-slider'),
 			slidesToScroll: 2,
 			dots: true,
 			arrows: false,
+			autoplay: true,
 			responsive: [
 				{
 				  breakpoint: 993,

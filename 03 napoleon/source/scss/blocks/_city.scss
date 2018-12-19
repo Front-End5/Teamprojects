@@ -1,7 +1,8 @@
 .city {
     display: flex;
     align-items: center;
-    margin-right: 30px;
+    // TODO: uncomment then shop will add to site
+    // margin-right: 30px;
     color: $color-secondary;
     @media screen and (max-width: $medium) {
         margin: 0 15px;

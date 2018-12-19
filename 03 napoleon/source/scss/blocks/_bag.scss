@@ -1,6 +1,8 @@
 .bag {
     position: relative;
     padding-right: 25px;
+    // TODO: uncomment this when shop add
+    display: none;
     &__count {
         position: absolute;
         top: -12px;

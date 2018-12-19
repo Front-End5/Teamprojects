@@ -27,3 +27,9 @@ h3 {
     color: $color-secondary;
     line-height: 1.4;
 }
+
+.wpcf7-form-control {
+    margin: $gutter/2 0;
+    padding: $gutter/3;
+    border: 2px solid $color-secondary;
+}
